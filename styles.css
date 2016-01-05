@@ -1,0 +1,16 @@
+div.snowden-g-post,div.g-post {
+	float: right;
+	display: inline;
+}
+td.prof,a.prof,img.prof {
+	height: 64px;
+	width: 64px;
+}
+/*div.imgsnowden,img.snowden {
+	width: 300;
+	float: left;
+	display: inline;
+}*/
+div.snowden,p.snowden {
+	font-size: 5em;
+}
