@@ -22,6 +22,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		<p><a href="ArchieT.key">Mój klucz publiczny PGP<br><code>72A3 D939 ECA2 67FB 0096  8F4B 8179 43C5 88A5 0062</code></a></p>
 		<hr>
 		<p><a href="mailto:Micha%C5%82%20Krzysztof%20Feiler<archiet@platinum.edu.pl>">Michał Krzysztof Feiler &lt;archiet@platinum.edu.pl&gt;</a></p>
+<hr><p><a href="xmpp:feiler.michal@jabbim.pl">xmpp:feiler.michal@jabbim.pl</p>
 		<hr><!--
 		<p><a href="https://keybase.io/ArchieT">ArchieT on Keybase</a></p>
 		<p><a href="https://google.com/+MichalKrzysztofFeiler">My Google+ profile</a></p>
