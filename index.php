@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="icon" type="image/png" href="DSCF7629-bfab-fixed-squared-666px.png">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 	<body class="website"><!-- Google Tag Manager -->
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KP8WW2"
