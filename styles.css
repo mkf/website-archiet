@@ -1,3 +1,10 @@
+body {
+	margin: 40px auto;
+	max-width: 1200px;
+	line-height: 1.6;
+	padding: 0 10px
+}
+
 div.snowden-g-post,div.g-post {
 	float: right;
 	display: inline;
