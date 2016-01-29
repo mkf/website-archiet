@@ -24,7 +24,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		    <!--p>To jest strona Michała Krzysztofa Feilera na serwerze Platinum.</p-->
 <h1>Michał Krzysztof Feiler</h1>
 <side>Licealista, programista, fanatyk wolnego oprogramowania.</side>
-<img src="DSCF7629-bfab-fixed-squared-666px.png" height="333px" align="right">
+<img src="DSCF7629-bfab-fixed-squared-666px.png" height="333px" align="right" alt="Michał Krzysztof Feiler" title="Michał Krzysztof Feiler w 2012">
 		<br><hr>
 <h2>Kontakt</h2>
 		<h3>Mój klucz publiczny OpenPGP</h3><a href="ArchieT.key"><tt class="pgp"><font class="pgp">72A3 D939 ECA2 67FB 0096  8F4B 8179 43C5 88A5 0062</font></tt></a>
