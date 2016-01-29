@@ -27,7 +27,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 <img src="DSCF7629-bfab-fixed-squared-666px.png" height="333px" align="right">
 		<br><hr>
 <h2>Kontakt</h2>
-		<h3>Mój klucz publiczny PGP</h3><a href="ArchieT.key"><code class="pgp"><font class="pgp">72A3 D939 ECA2 67FB 0096  8F4B 8179 43C5 88A5 0062</font></code></a>
+		<h3>Mój klucz publiczny PGP</h3><a href="ArchieT.key"><tt class="pgp"><font class="pgp">72A3 D939 ECA2 67FB 0096  8F4B 8179 43C5 88A5 0062</font></tt></a>
 		<h3>Adresy</h3><h4>Email</h4><p><a href="mailto:Micha%C5%82%20Krzysztof%20Feiler<archiet@platinum.edu.pl>">Michał Krzysztof Feiler &lt;archiet@platinum.edu.pl&gt;</a></p>
 <h4>Jabber/XMPP</h4><p><a href="xmpp:feiler.michal@jabbim.pl">xmpp:feiler.michal@jabbim.pl</a></p>
 		<!--
