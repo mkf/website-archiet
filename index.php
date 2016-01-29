@@ -36,24 +36,23 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		<p><a href="https://github.com/ArchieT">ArchieT on Github</a></p>
 		<p><a href="https://linkedin.com/in/feilermichal">My LinkedIn profile</a></p>-->
 <h3>Profile społecznościowe</h3>
-				<a class="prof" href="https://keybase.io/ArchieT">
-						<img class="prof" width="64" src="https://keybase.io/images/logo_no_text.png">
-					</a>
-					<!-- Place this code where you want the badge to render. -->
-						<a class="prof" href="//plus.google.com/u/0/100176969216547798972?prsrc=3"
-							   rel="publisher" target="_top">
-							<img class="prof" width="64" src="//ssl.gstatic.com/images/icons/gplus-64.png" alt="Google+"/>
-						</a>
-					<a class="prof" href="https://github.com/ArchieT">
-							<img class="prof" width="64" src="http://cdn.flaticon.com/png/256/25231.png">
-						</a>
-						<a class="prof" href="https://linkedin.com/in/feilermichal">
-								<img class="prof" width="64" src="http://cdn.marketingboard.biz/wp-content/uploads/2014/08/LinkedIn-Badge.png">
-							</a>
-<a class="prof" href="https://medium.com/@ArchieT"><img class="prof" width="64" src="https://cdn-static-1.medium.com/_/fp/icons/favicon-new.TAS6uQ-Y7kcKgi0xjcYHXw.ico">
-</a>
-<a class="prof" href="https://twitter.com/feilermichal"><img class="prof" width="64" src="twitter-xl.png"></a>
-<a class="prof" href="https://wakatime.com/@ArchieT"><img class="prof" width="64" src="https://1db44f7c4e39b2d86e7e-677cd5270e70f156b5d14a00d2ed7d35.ssl.cf1.rackcdn.com/3115/311437_th3.jpg"></a>
+<a class="prof" href="https://keybase.io/ArchieT">
+<img class="prof" width="64" src="https://keybase.io/images/logo_no_text.png" alt="Keybase"></a>
+<!-- Place this code where you want the badge to render. -->
+<a class="prof" href="//plus.google.com/u/0/100176969216547798972?prsrc=3" rel="publisher" target="_top">
+<img class="prof" width="64" src="//ssl.gstatic.com/images/icons/gplus-64.png" alt="Google+"/></a>
+<a class="prof" href="https://github.com/ArchieT">
+<img class="prof" width="64" src="http://cdn.flaticon.com/png/256/25231.png" alt="Github"></a>
+<a class="prof" href="https://linkedin.com/in/feilermichal">
+<img class="prof" width="64" src="http://cdn.marketingboard.biz/wp-content/uploads/2014/08/LinkedIn-Badge.png"
+alt="LinkedIn"></a>
+<a class="prof" href="https://medium.com/@ArchieT">
+<img class="prof" width="64" src="https://cdn-static-1.medium.com/_/fp/icons/favicon-new.TAS6uQ-Y7kcKgi0xjcYHXw.ico"
+alt="Medium"></a>
+<a class="prof" href="https://twitter.com/feilermichal"><img class="prof" width="64" src="twitter-xl.png" alt="Twitter"></a>
+<a class="prof" href="https://wakatime.com/@ArchieT">
+<img class="prof" width="64" 
+src="https://1db44f7c4e39b2d86e7e-677cd5270e70f156b5d14a00d2ed7d35.ssl.cf1.rackcdn.com/3115/311437_th3.jpg" alt="WakaTime"></a>
 		<hr>
 <!--<div class="snowden-g-post"><div class="g-post" data-href="https://plus.google.com/+MichalKrzysztofFeiler/posts/3EuedCv8o3n"></div></div-->
 
