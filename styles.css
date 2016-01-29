@@ -5,25 +5,17 @@ body.website {
 	padding: 0 10px;
 }
 
+code.pgp {
+	font-color: blue;
+}
+
+cite.from-quote {
+	text-align: justify;
+	text-justify: distribute;
+}
+
 blockquote footer {
 	text-align: right;
 	float: right;
 	padding: 10px;
-}
-
-div.snowden-g-post,div.g-post {
-	float: right;
-	display: inline;
-}
-td.prof,a.prof,img.prof {
-	height: 64px;
-	width: 64px;
-}
-/*div.imgsnowden,img.snowden {
-	width: 300;
-	float: left;
-	display: inline;
-}*/
-div.snowden,p.snowden {
-	font-size: 5em;
 }
