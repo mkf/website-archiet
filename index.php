@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="icon" type="image/png" href="DSCF7629-bfab-fixed-squared-666px.png">
 	</head>
-	<body><!-- Google Tag Manager -->
+	<body class="website"><!-- Google Tag Manager -->
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KP8WW2"
 		    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
