@@ -60,7 +60,7 @@ src="https://1db44f7c4e39b2d86e7e-677cd5270e70f156b5d14a00d2ed7d35.ssl.cf1.rackc
 <!--<div class="snowden-g-post"><div class="g-post" data-href="https://plus.google.com/+MichalKrzysztofFeiler/posts/3EuedCv8o3n"></div></div-->
 
 <blockquote class="blockquote-reverse" cite="http://fokus.dn.se/edward-snowden-english/">
-<cite>
+<cite class="snowdencit">
 
 "— Arguing that you don’t care about the right to privacy because you have
 nothing to hide, is no different than saying you don’t care about free speech
