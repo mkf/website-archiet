@@ -10,6 +10,7 @@ img.meright {
 	height: 333px;
 	width: 333px;
 	margin-left: 3px;
+	vertical-align: top;
 }
 
 span.headright {
