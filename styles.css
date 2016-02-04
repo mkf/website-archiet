@@ -26,13 +26,14 @@ a.prof,img.prof {
 code.pgp,.pgp {
 	font-color: #09F;
 
-cite.snowdencit {
+.blockquote-reverse {
 	text-align: justify;
 	text-justify: auto;
+	margin-left: 30px;
+	text-indent: 70px;
 }
 
-blockquote footer {
+footer {
 	text-align: right;
-	float: right;
 	padding: 10px;
 }
