@@ -5,6 +5,14 @@ body.website {
 	padding: 0 10px;
 }
 
+img.meright {
+	float: right;
+}
+
+span.headright {
+	float: right;
+}
+
 a.prof,img.prof {
 	height: 64px;
 	width: 64px;

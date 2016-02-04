@@ -23,14 +23,16 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		    })(window,document,'script','dataLayer','GTM-KP8WW2');</script>
 		    <!-- End Google Tag Manager -->
 		    <!--p>To jest strona Michała Krzysztofa Feilera na serwerze Platinum.</p-->
+<span class="headright"></span>
 <h1>Michał Krzysztof Feiler</h1>
 <side>Licealista, programista, fanatyk wolnego oprogramowania.</side>
-<img src="DSCF7629-bfab-fixed-squared-666px.png" height="333px" align="right" alt="Michał Krzysztof Feiler" title="Michał Krzysztof Feiler w 2012">
+<img src="DSCF7629-bfab-fixed-squared-666px.png" height="333px" class="meright" alt="Michał Krzysztof Feiler" title="Michał Krzysztof Feiler w 2012">
 		<br><hr>
 <h2>Kontakt</h2>
 		<h3>Mój klucz publiczny OpenPGP</h3><a href="ArchieT.key"><tt class="pgp"><font class="pgp">72A3 D939 ECA2 67FB 0096  8F4B 8179 43C5 88A5 0062</font></tt></a>
 		<h3>Adresy</h3><h4>Email</h4><p><a href="mailto:Micha%C5%82%20Krzysztof%20Feiler<archiet@platinum.edu.pl>">Michał Krzysztof Feiler &lt;archiet@platinum.edu.pl&gt;</a><br><code><?php include "mailfinger"; ?></code></p>
 <h4>Jabber/XMPP</h4><p><a href="xmpp:feiler.michal@jabbim.pl">xmpp:feiler.michal@jabbim.pl</a></p>
+<br clear="all">
 		<!--
 		<p><a href="https://keybase.io/ArchieT">ArchieT on Keybase</a></p>
 		<p><a href="https://google.com/+MichalKrzysztofFeiler">My Google+ profile</a></p>
