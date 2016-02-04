@@ -7,9 +7,9 @@ body.website {
 
 img.meright {
 	float: right;
-	position: absolute;
-	right: 0px;
+	height: 333px;
 	width: 333px;
+	margin-left: 3px;
 }
 
 span.headright {
