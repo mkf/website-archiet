@@ -27,7 +27,7 @@ code.pgp,.pgp {
 
 cite.from-quote {
 	text-align: justify;
-	text-justify: distribute;
+	text-justify: auto;
 }
 
 blockquote footer {
