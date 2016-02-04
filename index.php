@@ -25,7 +25,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		    <!--p>To jest strona Michała Krzysztofa Feilera na serwerze Platinum.</p-->
 <span class="headright"></span>
 <h1>Michał Krzysztof Feiler</h1>
-<side>Licealista, programista, fanatyk wolnego oprogramowania.</side>
+<side>Licealista, programista, fanatyk wolnego oprogramowania.</side><br>
 <img src="DSCF7629-bfab-fixed-squared-666px.png" height="333px" class="meright" alt="Michał Krzysztof Feiler" title="Michał Krzysztof Feiler w 2012">
 		<br><hr>
 <h2>Kontakt</h2>
