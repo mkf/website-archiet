@@ -76,10 +76,10 @@ protected by governments."
 Edward Snowden
 </footer></blockquote>
 <hr>
-<figure width="100%"><embed width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/a27d3166-6824-4679-9dc9-f4e329e5ac5b.svg"></embed></figure>
+<figure width="100%"><iframe width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/a27d3166-6824-4679-9dc9-f4e329e5ac5b.svg"></iframe></figure>
 <br>
-<figure width="100%"><embed width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/79ec7a96-7a2e-47c4-a2ff-924926a0ba98.svg"></embed></figure>
-<figure width="100%"><embed width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/1da1c520-adbe-499f-af18-726392af7b62.svg"></embed></figure>
-<figure width="100%"><embed width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/f858bddd-405a-42d8-aba2-f109cdc1d804.svg"></embed></figure>
+<figure width="100%"><iframe  width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/79ec7a96-7a2e-47c4-a2ff-924926a0ba98.svg"></iframe></figure>
+<figure width="100%"><iframe  width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/1da1c520-adbe-499f-af18-726392af7b62.svg"></iframe></figure>
+<figure width="100%"><iframe  width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/f858bddd-405a-42d8-aba2-f109cdc1d804.svg"></iframe></figure>
 	</body>
 </html>
