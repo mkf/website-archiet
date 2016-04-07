@@ -76,7 +76,7 @@ protected by governments."
 Edward Snowden
 </footer></blockquote>
 <hr>
-<figure><embed src="https://wakatime.com/@ArchieT/a27d3166-6824-4679-9dc9-f4e329e5ac5b.svg"></embed></figure>
+<figure width="100%"><embed src="https://wakatime.com/@ArchieT/a27d3166-6824-4679-9dc9-f4e329e5ac5b.svg"></embed></figure>
 <br>
 <figure width="100%"><embed src="https://wakatime.com/@ArchieT/79ec7a96-7a2e-47c4-a2ff-924926a0ba98.svg"></embed></figure>
 <figure width="100%"><embed src="https://wakatime.com/@ArchieT/1da1c520-adbe-499f-af18-726392af7b62.svg"></embed></figure>
