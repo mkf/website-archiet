@@ -40,7 +40,7 @@ function langues(id) {
 			}
 			console.log(dalist);
 			var chart = new google.visualization.PieChart(document.getElementById(id));
-			chart.draw(dalist, {
+			chart.draw(google.visualization.arrayToDataTable(dalist), {
 				title: nasz.title,
 				legend: {
 					position: "right",
