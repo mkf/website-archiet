@@ -16,16 +16,31 @@ function monthtimes() {
 			dalist.push(["Date", "Seconds"]);
 			for (var i = 0; i < data.data.length; i++) {
 				var mom = zaj[i];
-				dalist.push([new Date(mom.range.date), mom.grand_total.total_seconds]);
+				var tots = mom.grand_total.total_seconds;
+				dalist.push([new Date(mom.range.date), {
+					v: tots,
+					f: tots.toHMS()
+				}]);
 			}
 			console.log(dalist);
+			var tabb = new google.visualization.DataTable();
+			tabb.addColumn("date", "Date");
+			tabb.addColumn("number", "Amount of time");
+			tabb.addRows(dalist);
 			var chart = new google.visualization.PieChart(document.getElementById("actiwaka"));
-			//chart.draw(google.visualization
+			chart.draw(tabb, {});
 		},
 		error: function(err) {
 			console.log(err);
 		}
 	});
+}
+
+Number.prototype.toHMS = function() {
+	var hours = Math.floor(this / 3600) < 10 ? ("00" + Math.floor(this / 3600)).slice(-2) : Math.floor(this / 3600);
+	var minutes = ("00" + Math.floor((this % 3600) / 60)).slice(-2);
+	var seconds = ("00" + (this % 3600) % 60).slice(-2);
+	return hours + "h " + minutes + "m " + seconds + "s";
 }
 
 function langues(id) {
