@@ -48,7 +48,7 @@ function langues(id) {
 			chart.draw(google.visualization.arrayToDataTable(dalist), {
 				title: nasz.title,
 				legend: {
-					position: "right",
+					position: "left",
 					alignment: "center",
 				},
 				fontSize: 12,
@@ -63,6 +63,7 @@ function langues(id) {
 					top: 0,
 					left: 0,
 				},
+				sliceVisibilityThreshold: 0.0,
 			});
 		},
 		error: function(err) {
