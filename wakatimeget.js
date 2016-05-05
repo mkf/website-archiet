@@ -11,10 +11,14 @@ function monthtimes() {
 		complete: function() {},
 		success: function(data) {
 			console.log(data);
+			var zaj = data.data;
 			var dalist = [];
+			dalist.push(["Date","Seconds"]);
 			for (var i = 0; i < data.data.length; i++) {
-				data.push([data.data[i].range.text, data.data[i].grand_total.total_seconds]);
+				var mom = zaj[i];
+				dalist.push([zaj.range.text, zaj.grand_total.total_seconds]);
 			}
+			console.log(dalist);
 			// var
 		},
 		error: function(err) {
@@ -34,6 +38,7 @@ function langues(id) {
 			console.log(data);
 			var zaj = data.data;
 			var dalist = [];
+			dalist.push(["Name","Percentage"]);
 			for (var i = 0; i < data.data.length; i++) {
 				var mom = zaj[i];
 				dalist.push([mom.name, mom.percent]);
