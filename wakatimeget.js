@@ -59,7 +59,7 @@ function langues(id) {
 				pieHole: 0.7,
 				chartArea: {
 					height: "90%",
-					width: "80%",
+					width: "70%",
 					/*
 					top: 0,
 					left: 0,
