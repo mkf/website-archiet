@@ -41,8 +41,9 @@ code.pgp,.pgp {
 
 h5.waka {
 	text-align: center;
-	font-style: Courier;
+	font-family: Courier;
 	font-size: 14px;
+	font-weight: 500;
 }
 
 footer {
