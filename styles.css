@@ -39,6 +39,12 @@ code.pgp,.pgp {
 	min-height: 63vh;
 }
 
+h5.waka {
+	text-align: center;
+	font-style: Courier;
+	font-size: 14px;
+}
+
 footer {
 	text-align: right;
 	padding: 10px;
