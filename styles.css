@@ -36,7 +36,7 @@ code.pgp,.pgp {
 
 .actiwaka, .piewaka {
 	width: 100%;
-	min-height: 500px;
+	min-height: 100vh;
 }
 
 footer {
