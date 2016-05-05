@@ -41,7 +41,7 @@ function langues(id) {
 			dalist.push(["Name", "Percentage"]);
 			for (var i = 0; i < data.data.length; i++) {
 				var mom = zaj[i];
-				dalist.push([mom.name, mom.percent]);
+				dalist.push([mom.name + " (" + mom.percent + "%)", mom.percent]);
 			}
 			console.log(dalist);
 			var chart = new google.visualization.PieChart(document.getElementById(id));
@@ -64,6 +64,9 @@ function langues(id) {
 					left: 0,
 				},
 				sliceVisibilityThreshold: 0.0,
+				tooltip: {
+					text: "percentage",
+				},
 			});
 		},
 		error: function(err) {
