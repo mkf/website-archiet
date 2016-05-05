@@ -13,7 +13,6 @@ function monthtimes() {
 			console.log(data);
 			var zaj = data.data;
 			var dalist = [];
-			dalist.push(["Date", "Seconds"]);
 			for (var i = 0; i < data.data.length; i++) {
 				var mom = zaj[i];
 				var tots = mom.grand_total.total_seconds;
