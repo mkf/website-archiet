@@ -60,8 +60,10 @@ function langues(id) {
 				chartArea: {
 					height: "90%",
 					width: "80%",
+					/*
 					top: 0,
 					left: 0,
+					*/
 				},
 			});
 		},
