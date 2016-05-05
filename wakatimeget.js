@@ -34,7 +34,7 @@ function monthtimes() {
 				legend: {
 					position: "none"
 				},
-				yAxis: {
+				vAxis: {
 					ticks: [{
 						v: 3600,
 						f: "1h"
