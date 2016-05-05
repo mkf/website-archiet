@@ -19,7 +19,8 @@ function monthtimes() {
 				dalist.push([zaj.range.text, zaj.grand_total.total_seconds]);
 			}
 			console.log(dalist);
-			// var
+			var chart = new google.visualization.PieChart(document.getElementById("actiwaka"));
+			//chart.draw(google.visualization
 		},
 		error: function(err) {
 			console.log(err);
@@ -106,5 +107,5 @@ function odpalwakatime() {
 	langues("7d");
 	langues("30d");
 	langues("alltime");
-	//monthtimes();
+	monthtimes();
 }
