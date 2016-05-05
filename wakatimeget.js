@@ -1,3 +1,8 @@
+google.charts.load('current', {
+	'packages': ['corechart']
+});
+google.charts.setOnLoadCallback(odpalwakatime);
+
 function monthtimes() {
 	jQuery.ajax({
 		url: activityurl,
@@ -37,6 +42,10 @@ function langues(id) {
 			var chart = new google.visualization.PieChart(document.getElementById(id));
 			chart.draw(dalist, {
 				title: nasz.title,
+				legend: {
+					position: "right",
+				},
+				pieSliceText: 'value',
 			});
 		},
 		error: function(err) {
