@@ -71,7 +71,7 @@ function langues(id) {
 				title: "Languages over " + nasz.title + " (Powered by wakatime.com)",
 				titleTextStyle: {
 					color: "black",
-					fontName: "Courier",
+					fontName: "monospace",
 					fontSize: 13,
 					bold: true,
 				},
@@ -80,7 +80,7 @@ function langues(id) {
 					alignment: "center",
 				},
 				fontSize: 12,
-				fontName: "Courier",
+				fontName: "monospace",
 				pieSliceText: 'label',
 				pieSliceTextStyle: {
 					color: "#333333",
