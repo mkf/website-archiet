@@ -16,7 +16,7 @@ function monthtimes() {
 			dalist.push(["Date", "Seconds"]);
 			for (var i = 0; i < data.data.length; i++) {
 				var mom = zaj[i];
-				dalist.push([new Date(zaj.range.date), zaj.grand_total.total_seconds]);
+				dalist.push([new Date(mom.range.date), mom.grand_total.total_seconds]);
 			}
 			console.log(dalist);
 			var chart = new google.visualization.PieChart(document.getElementById("actiwaka"));
