@@ -13,7 +13,7 @@ function monthtimes() {
 			console.log(data);
 			var zaj = data.data;
 			var dalist = [];
-			dalist.push(["Date","Seconds"]);
+			dalist.push(["Date", "Seconds"]);
 			for (var i = 0; i < data.data.length; i++) {
 				var mom = zaj[i];
 				dalist.push([zaj.range.text, zaj.grand_total.total_seconds]);
@@ -38,7 +38,7 @@ function langues(id) {
 			console.log(data);
 			var zaj = data.data;
 			var dalist = [];
-			dalist.push(["Name","Percentage"]);
+			dalist.push(["Name", "Percentage"]);
 			for (var i = 0; i < data.data.length; i++) {
 				var mom = zaj[i];
 				dalist.push([mom.name, mom.percent]);
@@ -53,7 +53,7 @@ function langues(id) {
 				pieSliceText: 'value',
 				pieHole: 0.5,
 				chartArea: {
-					height: "100%",
+					height: 600
 				},
 			});
 		},
