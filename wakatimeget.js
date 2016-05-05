@@ -51,6 +51,10 @@ function langues(id) {
 					position: "right",
 				},
 				pieSliceText: 'value',
+				pieHole: 0.5,
+				chartArea: {
+					height: "100%",
+				},
 			});
 		},
 		error: function(err) {
