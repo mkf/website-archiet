@@ -30,7 +30,11 @@ function monthtimes() {
 			tabb.addColumn("number", "Amount of time");
 			tabb.addRows(dalist);
 			var chart = new google.charts.Bar(document.getElementById("actiwaka"));
-			chart.draw(tabb, {});
+			chart.draw(tabb, {
+				legend: {
+					position: "none"
+				}
+			});
 		},
 		error: function(err) {
 			console.log(err);
