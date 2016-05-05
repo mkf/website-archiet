@@ -48,7 +48,7 @@ function langues(id) {
 			chart.draw(google.visualization.arrayToDataTable(dalist), {
 				title: nasz.title,
 				legend: {
-					position: "left",
+					position: "labeled",
 				},
 				fontSize: 12,
 				fintName: "Inconsolata",
