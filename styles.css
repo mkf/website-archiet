@@ -34,6 +34,11 @@ code.pgp,.pgp {
 	text-indent: 70px;
 }
 
+.actiwaka, .piewaka {
+	width: 100%;
+	min-height: 500px;
+}
+
 footer {
 	text-align: right;
 	padding: 10px;
