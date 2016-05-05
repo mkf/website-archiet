@@ -55,8 +55,9 @@ function langues(id) {
 				pieHole: 0.5,
 				chartArea: {
 					height: "100%",
+					width: "100%",
 					top: 0,
-					left: 100,
+					left: 0,
 				},
 			});
 		},
