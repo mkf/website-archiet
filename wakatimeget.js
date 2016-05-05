@@ -54,7 +54,9 @@ function langues(id) {
 				pieSliceText: 'value',
 				pieHole: 0.5,
 				chartArea: {
-					height: 600
+					height: "100%",
+					top: 0,
+					left: 100,
 				},
 			});
 		},
