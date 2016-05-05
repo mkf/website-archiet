@@ -26,7 +26,7 @@ function monthtimes() {
 			tabb.addColumn("date", "Date");
 			tabb.addColumn("number", "Amount of time");
 			tabb.addRows(dalist);
-			var chart = new google.visualization.Bar(document.getElementById("actiwaka"));
+			var chart = new google.charts.Bar(document.getElementById("actiwaka"));
 			chart.draw(tabb, {});
 		},
 		error: function(err) {
