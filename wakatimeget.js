@@ -49,6 +49,7 @@ function langues(id) {
 				title: nasz.title,
 				legend: {
 					position: "labeled",
+					alignment: "center",
 				},
 				fontSize: 12,
 				fintName: "Inconsolata",
