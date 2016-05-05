@@ -48,8 +48,9 @@ function langues(id) {
 			chart.draw(google.visualization.arrayToDataTable(dalist), {
 				title: nasz.title,
 				legend: {
-					position: "right",
+					position: "left",
 				},
+				fontSize: 8,
 				pieSliceText: 'value',
 				pieHole: 0.5,
 				chartArea: {
