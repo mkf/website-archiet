@@ -83,7 +83,7 @@ Edward Snowden
 <figure width="100%"><object width="100%"><embed width="100%" type="image/svg+xml" src="https://wakatime.com/@ArchieT/f858bddd-405a-42d8-aba2-f109cdc1d804.svg"></embed></object></figure>
 <br>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="wakatime.js"></script>
+<script type="text/javascript" src="wakatimeget.js"></script>
 <div id="actiwaka" class="actiwaka"></div>
 <div id="7d" class="piewaka"></div>
 <div id="30d" class="piewaka"></div>
