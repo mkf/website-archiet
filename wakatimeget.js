@@ -46,13 +46,19 @@ function langues(id) {
 			console.log(dalist);
 			var chart = new google.visualization.PieChart(document.getElementById(id));
 			chart.draw(google.visualization.arrayToDataTable(dalist), {
-				title: "Languages over "+nasz.title+" (Powered by wakatime.com)",
+				title: "Languages over " + nasz.title + " (Powered by wakatime.com)",
+				titleTextStyle: {
+					color: black,
+					fontName: "Courier",
+					fontSize: 13,
+					bold: true,
+				},
 				legend: {
 					position: "left",
 					alignment: "center",
 				},
 				fontSize: 12,
-				fintName: "Inconsolata",
+				fintName: "Courier",
 				pieSliceText: 'label',
 				pieSliceTextStyle: {
 					color: "#333333",
