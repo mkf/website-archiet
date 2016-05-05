@@ -1,5 +1,5 @@
 google.charts.load('current', {
-	'packages': ['corechart','bar']
+	'packages': ['corechart', 'bar']
 });
 google.charts.setOnLoadCallback(odpalwakatime);
 
@@ -16,7 +16,10 @@ function monthtimes() {
 			for (var i = 0; i < data.data.length; i++) {
 				var mom = zaj[i];
 				var tots = mom.grand_total.total_seconds;
-				dalist.push([new Date(mom.range.date), {
+				dalist.push([{
+					v: new Date(mom.range.date),
+					f: mom.range.text
+				}, {
 					v: tots,
 					f: tots.toHMS()
 				}]);
