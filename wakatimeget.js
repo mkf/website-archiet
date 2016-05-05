@@ -46,7 +46,7 @@ function langues(id) {
 			console.log(dalist);
 			var chart = new google.visualization.PieChart(document.getElementById(id));
 			chart.draw(google.visualization.arrayToDataTable(dalist), {
-				title: nasz.title,
+				title: "Languages over "+nasz.title+" (Powered by wakatime.com)",
 				legend: {
 					position: "left",
 					alignment: "center",
@@ -83,7 +83,7 @@ var activityurl = "wakawaka/actiwaka.php";
 
 var about = {
 	"7d": {
-		title: "Last 7 days",
+		title: "Last 7 Days",
 		url: "wakawaka/7d.php"
 	},
 	"30d": {
@@ -91,7 +91,7 @@ var about = {
 		url: "wakawaka/30d.php"
 	},
 	"alltime": {
-		title: "All time",
+		title: "All Time",
 		url: "wakawaka/alltime.php"
 	},
 };
