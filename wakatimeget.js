@@ -58,7 +58,7 @@ function langues(id) {
 					alignment: "center",
 				},
 				fontSize: 12,
-				fintName: "Courier",
+				fontName: "Courier",
 				pieSliceText: 'label',
 				pieSliceTextStyle: {
 					color: "#333333",
