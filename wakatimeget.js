@@ -48,7 +48,7 @@ function langues(id) {
 			chart.draw(google.visualization.arrayToDataTable(dalist), {
 				title: "Languages over " + nasz.title + " (Powered by wakatime.com)",
 				titleTextStyle: {
-					color: black,
+					color: "black",
 					fontName: "Courier",
 					fontSize: 13,
 					bold: true,
