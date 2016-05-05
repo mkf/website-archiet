@@ -20,7 +20,7 @@ function monthtimes() {
 					v: new Date(mom.range.date),
 					f: mom.range.text
 				}, {
-					v: float(tots) / 3600,
+					v: tots / 3600,
 					f: tots.toHMS()
 				}]);
 			}
