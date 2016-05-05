@@ -49,7 +49,7 @@ function langues(id) {
 				title: nasz.title,
 				legend: {
 					position: "labeled",
-					alignment: "center",
+					alignment: "end",
 				},
 				fontSize: 12,
 				fintName: "Inconsolata",
@@ -58,8 +58,8 @@ function langues(id) {
 				pieSliceBorderColor: "#aaaaaa",
 				pieHole: 0.7,
 				chartArea: {
-					height: "90%",
-					width: "40%",
+					height: "100%",
+					width: "100%",
 					/*
 					top: 0,
 					left: 0,
