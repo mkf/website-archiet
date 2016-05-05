@@ -20,7 +20,7 @@ function monthtimes() {
 					v: new Date(mom.range.date),
 					f: mom.range.text
 				}, {
-					v: tots,
+					v: float(tots) / 3600,
 					f: tots.toHMS()
 				}]);
 			}
@@ -33,60 +33,6 @@ function monthtimes() {
 			chart.draw(tabb, {
 				legend: {
 					position: "none"
-				},
-				vAxis: {
-					ticks: [{
-						v: 3600,
-						f: "1h"
-					}, {
-						v: 2 * 3600,
-						f: "2h"
-					}, {
-						v: 3 * 3600,
-						f: "3h"
-					}, {
-						v: 4 * 3600,
-						f: "4h"
-					}, {
-						v: 5 * 3600,
-						f: "5h"
-					}, {
-						v: 6 * 3600,
-						f: "6h"
-					}, {
-						v: 7 * 3600,
-						f: "7h"
-					}, {
-						v: 8 * 3600,
-						f: "8h"
-					}, {
-						v: 9 * 3600,
-						f: "9h"
-					}, {
-						v: 10 * 3600,
-						f: "10h"
-					}, {
-						v: 11 * 3600,
-						f: "11h"
-					}, {
-						v: 12 * 3600,
-						f: "12h"
-					}, {
-						v: 13 * 3600,
-						f: "13h"
-					}, {
-						v: 14 * 3600,
-						f: "14h"
-					}, {
-						v: 15 * 3600,
-						f: "15h"
-					}, {
-						v: 16 * 3600,
-						f: "16h"
-					}, {
-						v: 17 * 3600,
-						f: "17h"
-					}, ],
 				},
 			});
 		},
