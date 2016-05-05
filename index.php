@@ -85,9 +85,13 @@ Edward Snowden
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="wakatimeget.js"></script>
+<h6 align="center">Coding Activity over Last 30 Days (Powered by <a href="http://wakatime.com" target="_blank">wakatime.com</a>)</h6>
 <div id="actiwaka" class="actiwaka"></div>
+<h6 align="center">Languages over Last 7 Days (Powered by <a href="http://wakatime.com" target="_blank">wakatime.com</a>)</h6>
 <div id="7d" class="piewaka"></div>
+<h6 align="center">Languages over Last 30 Days (Powered by <a href="http://wakatime.com" target="_blank">wakatime.com</a>)</h6>
 <div id="30d" class="piewaka"></div>
+<h6 align="center">Languages over All Time (Powered by <a href="http://wakatime.com" target="_blank">wakatime.com</a>)</h6>
 <div id="alltime" class="piewaka"></div>
 	</body>
 </html>
