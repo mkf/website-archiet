@@ -34,6 +34,18 @@ function monthtimes() {
 				legend: {
 					position: "none"
 				},
+				bar: {
+					groupWidth: "99%"
+				},
+				trendlines: {
+					0: {
+						color: "#cccccc",
+						degree: 5,
+						type: "polynomial",
+						lineWidth: 10,
+						opacity: 0.2,
+					}
+				},
 			});
 		},
 		error: function(err) {
