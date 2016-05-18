@@ -54,7 +54,7 @@
 			jQuery.get({
 				url: "http://archiet.platinum.edu.pl/mailfinger",
 				success: function(data) {
-					$("code.mailfinger").replaceWith(data)
+					$("code.mailfinger").innerHTML = data
 				}
 			})
 		</script>
