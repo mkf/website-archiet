@@ -16,14 +16,40 @@ img.meright {
 
 span.headright {
 	float: right;
+	clear: right;
+	vertical-align: middle;
+	width: 340px;
+	margin-left: 3px;
 }
 
-a.prof,img.prof {
+a.prof,
+img.prof {
 	height: 64px;
 	width: 64px;
 }
 
-code.pgp,.pgp {
+.rightmenu {
+	float: right;
+	clear: right;
+}
+
+.shortrightmenu {
+	max-width: 340px;
+}
+
+.navbar {
+	min-height: 38px;
+	height: 38px;
+}
+
+.navbar .navbar-nav > li > a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 38px;
+}
+
+code.pgp,
+.pgp {
 	font-color: #09F;
 }
 
@@ -34,7 +60,8 @@ code.pgp,.pgp {
 	text-indent: 70px;
 }
 
-.actiwaka, .piewaka {
+.actiwaka,
+.piewaka {
 	width: 100%;
 	min-height: 63vh;
 }
