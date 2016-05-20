@@ -19,22 +19,7 @@
 	<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KP8WW2"
 		    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<script>
-		(function(w, d, s, l, i) {
-			w[l] = w[l] || [];
-			w[l].push({
-				'gtm.start': new Date().getTime(),
-				event: 'gtm.js'
-			});
-			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
-				dl = l != 'dataLayer' ? '&l=' + l : '';
-			j.async = true;
-			j.src =
-				'//www.googletagmanager.com/gtm.js?id=' + i + dl;
-			f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-KP8WW2');
-	</script>
+	<script type="text/javascript" src="naszgtm.js"></script>
 	<!-- End Google Tag Manager -->
 	<!--p>To jest strona Michała Krzysztofa Feilera na serwerze Platinum.</p-->
 	<div class="rightmenu">
@@ -42,7 +27,8 @@
 			<div class="container fluid shortrightmenu">
 				<div class="collapse navbar-collapse navbar-top navbar-right shortrightmenu" id="bs-navbar-collapse-1">
 					<ul class="nav navbar-nav shortrightmenu">
-						<li><a href="/">O mnie</a></li>
+						<li class="active"><a href="/">O mnie</a></li>
+						<li><a href="/portfolio.html">Portfolio</a></li>
 					</ul>
 				</div>
 			</div>
