@@ -28,13 +28,11 @@ img.prof {
 	width: 64px;
 }
 
-.rightmenu {
-	float: right;
-	clear: right;
-}
-
-.shortrightmenu {
-	max-width: 340px;
+div.jumbotron {
+	background-color: white;
+	max-width: 800px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .navbar {
