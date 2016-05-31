@@ -75,3 +75,20 @@ footer {
 	text-align: right;
 	padding: 10px;
 }
+
+img.portproj {
+	float: left;
+	width: 150px;
+	margin-left: 10px;
+	margin-right: 25px;
+}
+
+.projdesc {
+	text-indent: 30px;
+}
+
+.projcollab {
+	text-align: left;
+	padding: 5px;
+	margin-left: 20px;
+}
