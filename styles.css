@@ -84,11 +84,22 @@ img.portproj {
 }
 
 .projdesc {
-	text-indent: 30px;
+	display: inline-block;
+	padding: 5px;
 }
 
 .projcollab {
 	text-align: left;
 	padding: 5px;
 	margin-left: 20px;
+}
+
+h3.projline {
+	font-size: 17px;
+}
+div.projlang {
+	padding: 5px;
+}
+span.projlang {
+	border-style: outset;
 }
