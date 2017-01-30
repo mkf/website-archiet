@@ -44,6 +44,7 @@
     <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.13/sorting/natural.js"></script>
 	<script>
         $(document).ready(function () {
             $('#yerby').DataTable(
@@ -53,8 +54,8 @@
 					"columns": [
 						{"orderData": [0,1], "width": "40px"},
 						{"orderData": [1,0], "width": "40px"},
-						{"orderData": [2,3], "width": "30px", "type":"num-fmt"},
-						{"orderData": [3,2], "width": "30px", "type":"num-fmt"},
+						{"orderData": [2,3], "width": "30px", "type":"natural-nohtml"},
+						{"orderData": [3,2], "width": "30px", "type":"natural-nohtml"},
 						{"orderData": [4,5], "width": "50px", "type":"date"},
                         {"orderData": [5,4], "width": "50px", "type":"date"},
 						{"type":"html"}
@@ -80,8 +81,8 @@
 		<tr>
 			<td>Taragui</td>
 			<td>Energia</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>2017-01-25</td>
 			<td>2017-01-25</td>
 			<td>Bardzo mocna i gorzka yerba, dla mnie ból głowy ;)</td>
@@ -89,8 +90,8 @@
 		<tr>
 			<td>Kraus</td>
 			<td>Silvestre</td>
-			<td><span class="gr">550</span></td>
-			<td><span class="gr">500</span></td>
+			<td>550g</td>
+			<td>500g</td>
 			<td>2017-01-26</td>
 			<td>2017-01-30</td>
 			<td>Bezdymna yerba z wyczuwalną ale nieprzesadną miętą.</td>
@@ -98,8 +99,8 @@
 		<tr>
 			<td>Kraus</td>
 			<td>Organica</td>
-			<td><span class="gr">500</span></td>
-			<td><span class="gr">500</span></td>
+			<td>500g</td>
+			<td>500g</td>
             <td>nigdy</td>
 			<td>nigdy</td>
             <td></td>
@@ -107,8 +108,8 @@
 		<tr>
 			<td>Kraus</td>
 			<td>Organica (2g saquitos)</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>nigdy</td>
 			<td>nigdy</td>
 			<td></td>
@@ -116,8 +117,8 @@
 		<tr>
 			<td>Pipore</td>
 			<td>Elaborada</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>2017-01-28</td>
 			<td>2017-01-28</td>
 			<td>Już nieco dymna yerba, choć nieporównanie lżejsza od Taragui Energia</td>
@@ -125,8 +126,8 @@
 		<tr>
 			<td>Amanda</td>
 			<td>Despalada</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>nigdy</td>
 			<td>nigdy</td>
 			<td></td>
@@ -134,8 +135,8 @@
 		<tr>
 			<td>Pajarito</td>
 			<td>Menta–Limon</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>nigdy</td>
 			<td>nigdy</td>
 			<td></td>
@@ -143,8 +144,8 @@
 		<tr>
 			<td>Selecta</td>
 			<td>Energy</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>nigdy</td>
 			<td>nigdy</td>
 			<td></td>
@@ -152,8 +153,8 @@
 		<tr>
 			<td>Pajarito</td>
 			<td>Especial</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>nigdy</td>
 			<td>nigdy</td>
 			<td></td>
@@ -161,8 +162,8 @@
 		<tr>
 			<td>Taragui</td>
 			<td>Elaborada</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>nigdy</td>
 			<td>nigdy</td>
 			<td></td>
@@ -170,8 +171,8 @@
 		<tr>
 			<td>Taragui</td>
 			<td>Citricos Del Litoral</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>nigdy</td>
 			<td>nigdy</td>
 			<td></td>
@@ -179,8 +180,8 @@
 		<tr>
 			<td>Colon</td>
 			<td>Elaborada</td>
-			<td><span class="gr">50</span></td>
-			<td><span class="gr">50</span></td>
+			<td>50g</td>
+			<td>50g</td>
 			<td>nigdy</td>
 			<td>nigdy</td>
 			<td></td>
