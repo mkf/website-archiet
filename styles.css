@@ -106,3 +106,7 @@ div.projlang {
 span.projlang {
 	border-style: outset;
 }
+
+td.gr :after {
+	content: "g";
+}
