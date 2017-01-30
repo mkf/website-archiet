@@ -107,6 +107,6 @@ span.projlang {
 	border-style: outset;
 }
 
-td.gr :after {
+span.gr :after {
 	content: "g";
 }
