@@ -48,12 +48,21 @@
             $('#yerby').DataTable(
 				{
 				    "paging": false,
-					"ordering": true
+					"ordering": true,
+					"columns": [
+						{"orderData": [0,1]},
+						{"orderData": [1,0]},
+						{"orderData": [2,3]},
+						{"orderData": [3,2]},
+						{"orderData": [4,5]},
+                        {"orderData": [5,4]},
+						null
+					]
 				}
 			);
         })
 	</script>
-	<table id="yerby" class="table table-bordered table-responsive">
+	<table id="yerby" class="table table-bordered table-responsive display" cellspacing="0">
 		<thead>
 		<tr>
 			<th>Marka</th>
