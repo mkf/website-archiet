@@ -45,7 +45,12 @@
 	<script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 	<script>
         $(document).ready(function () {
-            $('#yerby').DataTable();
+            $('#yerby').DataTable(
+				{
+				    "paging": false,
+					"ordering": true
+				}
+			);
         })
 	</script>
 	<table id="yerby" class="table table-bordered table-responsive">
