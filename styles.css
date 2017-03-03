@@ -47,12 +47,14 @@ div.jumbotron {
 	line-height: 38px;
 }
 
-code.pgp, code.pgprev, .pgp, .pgprev{
+code.pgp, .pgp{
 	font-color: #09F;
 }
 
 code.pgprev, .pgprev {
     text-decoration: line-through;
+    text-decoration-color: #F0F;
+    font-color: #F55;
 }
 
 .blockquote-reverse {
