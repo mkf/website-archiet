@@ -120,4 +120,7 @@ div.hoverfordesc {
     float: right;
     text-align: right;
     display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
