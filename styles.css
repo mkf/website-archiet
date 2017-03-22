@@ -115,8 +115,9 @@ span.projlang {
 div.hoverfordesc {
     font-family: Helvetica;
     font-style: italic;
-    font-size: 7px;
+    font-size: 5px;
     font-color: #AAA;
     float: right;
     text-align: right;
+    display: block;
 }
