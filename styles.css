@@ -111,3 +111,12 @@ div.projlang {
 span.projlang {
 	border-style: outset;
 }
+
+span.hoverfordesc {
+    font-family: Helvetica;
+    font-style: italic;
+    font-size: 7px;
+    font-color: #AAA;
+    float: right;
+    text-align: right;
+}
