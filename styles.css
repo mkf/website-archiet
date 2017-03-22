@@ -112,7 +112,7 @@ span.projlang {
 	border-style: outset;
 }
 
-div.hoverfordesc {
+.hoverfordesc {
     font-family: Helvetica;
     font-style: italic;
     font-size: 3px;
@@ -120,8 +120,4 @@ div.hoverfordesc {
     font-color: #AAA;
     float: right;
     text-align: right;
-    display: block;
-    //position: absolute;
-    //right: 0;
-    //top: 0;
 }
