@@ -112,7 +112,7 @@ span.projlang {
 	border-style: outset;
 }
 
-span.hoverfordesc {
+div.hoverfordesc {
     font-family: Helvetica;
     font-style: italic;
     font-size: 7px;
