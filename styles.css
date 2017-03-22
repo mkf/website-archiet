@@ -116,11 +116,12 @@ div.hoverfordesc {
     font-family: Helvetica;
     font-style: italic;
     font-size: 3px;
+    line-height: 1.1;
     font-color: #AAA;
     float: right;
     text-align: right;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0;
+    display: block;
+    //position: absolute;
+    //right: 0;
+    //top: 0;
 }
