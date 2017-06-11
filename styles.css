@@ -47,6 +47,10 @@ div.jumbotron {
 	line-height: 38px;
 }
 
+.pgp, .pgprev {
+    font-family: monospace;
+}
+
 code.pgp, .pgp{
 	color: #09F;
 }
@@ -62,6 +66,7 @@ code.pgprev, .pgprev {
 	text-justify: auto;
 	margin-left: 30px;
 	text-indent: 70px;
+    font-size: 15px;
 }
 
 .actiwaka,
