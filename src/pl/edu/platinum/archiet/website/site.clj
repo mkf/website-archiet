@@ -4,7 +4,8 @@
 
 (def overtitle "Strona Michała Krzysztofa Feilera na serwerze Platinum")
 
-(def titles {:main {:title nil :nav "O mnie" :url "index.html"}
+(def title-order [:index :portfolio :yerba])
+(def titles {:index {:title nil :nav "O mnie" :url "index.html"}
              :portfolio {:title "Portfolio" :nav "Portfolio" :url "portfolio.html"}
              :yerba {:title "Yerba Mate" :nav "Yerba Mate" :hidden-in-nav true :url "yerba.html"}})
 
@@ -13,7 +14,8 @@
         (keep #(when-not (or (not= % whichtitle)
                              (get-in titles [% :hidden-in-nav]))
                  [(if (= % whichtitle) :li.active :li)
-                  [:a {:href (get-in titles [% :url])} (get-in titles [% :nav])]]))))
+                  [:a {:href (get-in titles [% :url])} (get-in titles [% :nav])]])
+              title-order)))
 
 (defn base [whichtitle & contents]
   (html5 (:lang "pl")
