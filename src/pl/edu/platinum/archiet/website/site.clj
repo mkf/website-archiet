@@ -12,8 +12,8 @@
 
 (defn navbar-list [whichtitle]
   (into [:ul.nav.navbar-nav]
-        (keep #(when-not (or (not= % whichtitle)
-                             (get-in titles [% :hidden-in-nav]))
+        (keep #(when-not (and (not= % whichtitle)
+                              (get-in titles [% :hidden-in-nav]))
                  [(if (= % whichtitle) :li.active :li)
                   [:a {:href (get-in titles [% :url])} (get-in titles [% :nav])]])
               title-order)))
