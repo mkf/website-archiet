@@ -59,6 +59,7 @@ aTime is a service for measuring time spent in text editors, gathering informati
   (base
    [:span.headright]
    [:h1 "Michał Krzysztof Feiler"]
+   [:side "Absolwent liceum, programista, fan wolnego oprogramowania."]
    [:img.meright
     {:src "DSCF7629-bfab-fixed-squared-666px.png" :height "333px"
      :alt "Michał Krzysztof Feiler" :title "Michał Krzysztof Feiler w 2012"}]
@@ -66,13 +67,14 @@ aTime is a service for measuring time spent in text editors, gathering informati
    [:h3 "Mój klucz publiczny OpenPGP"]
    [:a {:href "ArchieT.key"}
     [:span.pgp "6ACF 4FCE E9BC DE97 5C81  4A49 599D 6671 880D 22D6"]]
+   [:br]
    [:a {:href "ArchieT.old.key"}
     [:span.pgprev "72A3 D939 ECA2 67FB 0096  8F4B 8179 43C5 88A5 0062"]]
    [:h3 "Adresy"]
    [:h4 "Email"]
    [:p
     [:a {:href"mailto:Micha%C5%82%20Krzysztof%20Feiler<archiet@platinum.edu.pl>"}
-     "Michał Krzysztof Feiler <archiet@platinum.edu.pl>"] [:br]
+     "Michał Krzysztof Feiler &lt;archiet@platinum.edu.pl&gt;"] [:br]
     [:script {:type "text/javascript" :src "jquery-2.2.3.min.js"}]
     [:code#mailfinger.mailfinger]
     (javascript-tag "
