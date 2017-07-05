@@ -7,7 +7,7 @@
 (def title-order [:index :portfolio :yerba])
 (def titles {:index {:title nil :nav "O mnie" :url "index.html"}
              :portfolio {:title "Portfolio" :nav "Portfolio" :url "portfolio.html"}
-             ;;:yerba {:title "Yerba Mate" :nav "Yerba Mate" :hidden-in-nav true :url "yerba.html"}
+             :yerba {:title "Yerba Mate" :nav "Yerba Mate" :hidden-in-nav true :url "yerba.html"}
              })
 
 (defn navbar-list [whichtitle]
