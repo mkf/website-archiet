@@ -4,45 +4,45 @@
 
 (def badges
   {:twitter {:url "https://twitter.com/feilermichal"
-             :img "twitter-xl.png" :alt "Twitter"
+             :img "socba/twitter-xl.png" :alt "Twitter"
              :title "Twitter is a social networking service which is about daily short burst messages called tweets restricted to 140 characters."}
    :github {:url "https://github.com/ArchieT"
             :img "http://cdn.flaticon.com/png/256/25231.png"
             :alt "Github" :title "Github is an online project hosting using Git"}
    :linkedin {:url "https://linkedin.com/in/feilermichal"
-              :img "LinkedIn-Badge.png" :alt "LinkedIn"
+              :img "socba/LinkedIn-Badge.png" :alt "LinkedIn"
               :title "Linkedin is a business and employment-oriented social networking service. LinkedIn profiles are often treated as personal résumés / CVs"}
    :goldenline {:url "https://www.goldenline.pl/michal-krzysztof-feiler/"
-                :img "goldenline.png" :alt "GoldenLine"
+                :img "socba/goldenline.png" :alt "GoldenLine"
                 :title "GoldenLine is a Polish business and employment-oriented social networking service. GoldenLine profiles are made to resemble personal résumés / CVs"}
    :keybase {:url "https://keybase.io/ArchieT"
-             :img "keybase_logo_no_text.png" :alt "Keybase"
+             :img "socba/keybase_logo_no_text.png" :alt "Keybase"
              :title "Keybase is a public directory of people's identities with their public keys being connected to identity proofs on social sites"}
    :google+ {:url "https://plus.google.com/u/0/100176969216547798972?prsrc=3"
              :img "http://ssl.gstatic.com/images/icons/gplus-64.png" :alt "Google+"
              :title "Google Plus is a social network from Google"}
    :tumblr {:url "https://archietor.tumblr.com" :alt "Tumblr"
-            :img "tumblr128.png"
+            :img "socba/tumblr128.png"
             :title "Tumblr is a microblogging and social networking website allowing to post multimedia and other content to a short-form blog."}
    :medium {:url "https://medium.com/@ArchieT" :alt "Medium"
             :img "https://cdn-static-1.medium.com/_/fp/icons/favicon-new.TAS6uQ-Y7kcKgi0xjcYHXw.ico"
             :title "Medium is an online publishing platform"}
    :facebook {:url "https://facebook.com/feilermichal"
-              :img "icon-facebook-64.png" :alt "Facebook"
+              :img "socba/icon-facebook-64.png" :alt "Facebook"
               :title "Facebook is a popular social networking site which is not good as a primary source of information about me"}
    :wakatime {:url "https://wakatime.com/@ArchieT"
-              :img "wakatime_311437_th3.jpg" :alt "WakaTime"
+              :img "socba/wakatime_311437_th3.jpg" :alt "WakaTime"
               :title"Wak
 aTime is a service for measuring time spent in text editors, gathering information about project name, languages and editors used."}
    :lastfm {:url "https://www.last.fm/user/feilermichal"
-            :img "lastfm.png" :alt "Last.fm"
+            :img "socba/lastfm.png" :alt "Last.fm"
             :title "Last.fm is a music scrobbling website, keeping track of the music you listen to."}})
 
 (defn badge ([kw] (let [{:keys [url img alt title]} (badges kw)]
                     (badge kw url img alt title)))
   ([kw url img alt title]
    [:a.prof {:href url :target "_blank"}
-    [:img.prof (merge {:width 64 :src (str "socba/" img) :alt alt :title title}
+    [:img.prof (merge {:width 64 :src img :alt alt :title title}
                       (if (= kw :google+) {:rel "publisher"} {}))]]))
 
 (defn waka ([num-of-days-lang] (waka num-of-days-lang false))
