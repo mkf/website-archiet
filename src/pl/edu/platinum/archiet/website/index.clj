@@ -1,7 +1,5 @@
 (ns pl.edu.platinum.archiet.website.index
-  (:require [hiccup.core :refer [html]]
-            [hiccup.page :refer [html5 include-css]]
-            [hiccup.element :refer [javascript-tag]]
+  (:require [hiccup.element :refer [javascript-tag]]
             [pl.edu.platinum.archiet.website.site :refer [base]]))
 
 (def badges
@@ -34,7 +32,8 @@
               :title "Facebook is a popular social networking site which is not good as a primary source of information about me"}
    :wakatime {:url "https://wakatime.com/@ArchieT"
               :img "wakatime_311437_th3.jpg" :alt "WakaTime"
-              :title"WakaTime is a service for measuring time spent in text editors, gathering information about project name, languages and editors used."}
+              :title"Wak
+aTime is a service for measuring time spent in text editors, gathering information about project name, languages and editors used."}
    :lastfm {:url "https://www.last.fm/user/feilermichal"
             :img "lastfm.png" :alt "Last.fm"
             :title "Last.fm is a music scrobbling website, keeping track of the music you listen to."}})
