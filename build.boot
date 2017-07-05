@@ -3,7 +3,7 @@
  :resource-paths #{"resources"}
  :dependencies '[[org.clojure/clojure "1.8.0"]
                  [hiccup "1.0.5"]
-                 [perun "0.3.0"]
+                 [perun "0.4.2-SNAPSHOT"]
                  [clj-time "0.13.0"]
                  ;;[boot-ssh "0.1.1-SNAPSHOT"]
                  ])
@@ -18,7 +18,7 @@
   []
   (comp (markdown)
         (permalink)
-        (static :page "index.html" :renderer pl.edu.platinum.archiet.website.index/render)
-        (static :page "portfolio.html" :renderer pl.edu.platinum.archiet.website.portfolio/render)
+        (static :page "index.html" :renderer 'pl.edu.platinum.archiet.website.index/render)
+        (static :page "portfolio.html" :renderer 'pl.edu.platinum.archiet.website.portfolio/render)
         (sitemap :filename "sitemap.xml")
         ))
