@@ -1,8 +1,8 @@
 (ns pl.edu.platinum.archiet.website.index
-(:require [hiccup.core :refer [html]]
-          [hiccup.page :refer [html5 include-css]]
-          [hiccup.element :refer [javascript-tag]]
-          [pl.edu.platinum.archiet.website.site :refer [base]]))
+  (:require [hiccup.core :refer [html]]
+            [hiccup.page :refer [html5 include-css]]
+            [hiccup.element :refer [javascript-tag]]
+            [pl.edu.platinum.archiet.website.site :refer [base]]))
 
 (def badges
   {:twitter {:url "https://twitter.com/feilermichal"
