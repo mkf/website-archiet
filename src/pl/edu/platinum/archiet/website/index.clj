@@ -56,7 +56,7 @@ aTime is a service for measuring time spent in text editors, gathering informati
       [:a {:href "http://wakatime.com" :target "_blank"} "wakatime.com"]])))
 
 (defn render [{global :meta entry :entry}]
-  (base
+  (base :index
    [:span.headright]
    [:h1 "Michał Krzysztof Feiler"]
    [:side "Absolwent liceum, programista, fan wolnego oprogramowania."]

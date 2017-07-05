@@ -2,7 +2,7 @@
   (:require [pl.edu.platinum.archiet.website.site :refer [base]]))
 
 (defn render [{global :meta entry :entry}]
-  (base
+  (base :portfolio
    [:div#accordion.panel-group
     [:div.panel.panel-default
      [:div.panel-body.portfproj
