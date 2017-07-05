@@ -43,7 +43,7 @@ aTime is a service for measuring time spent in text editors, gathering informati
   ([kw url img alt title]
    [:a.prof {:href url :target "_blank"}
     [:img.prof (merge {:width 64 :src img :alt alt :title title}
-                      (if (= kw :google+) {:rel "publisher"} {}))]]))
+                      (if (= kw :google+) {:rel "publisher"} {}))] "  "]))
 
 (defn waka ([num-of-days-lang] (waka num-of-days-lang false))
   ([num-of-days ca-not-lang?]
