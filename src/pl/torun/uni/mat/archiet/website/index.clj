@@ -14,6 +14,9 @@
    [:span.headright]
    [:h1 "Michał Krzysztof Feiler"]
    [:side "Absolwent liceum, programista, fan wolnego oprogramowania."]
+   [:img.meright
+    {:src "DSCF7629-bfab-fixed-squared-666px.png" :height "333px"
+     :alt "Michał Krzysztof Feiler" :title "Michał Krzysztof Feiler w 2012"}]
    [:br] [:hr] [:h2 "Kontakt"]
    [:h3 "Mój klucz publiczny OpenPGP"]
    [:a {:href "ArchieT.key"}
