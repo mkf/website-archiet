@@ -23,12 +23,6 @@ span.headright {
 	margin-left: 3px;
 }
 
-a.prof,
-img.prof {
-	height: 64px;
-	width: 64px;
-}
-
 div.jumbotron {
 	background-color: white;
 	max-width: 800px;
@@ -115,14 +109,4 @@ div.projlang {
 
 span.projlang {
 	border-style: outset;
-}
-
-.hoverfordesc {
-    font-family: Helvetica;
-    font-style: italic;
-    font-size: 10px;
-    line-height: 1.1;
-    font-color: #AAA;
-    float: right;
-    text-align: right;
 }
