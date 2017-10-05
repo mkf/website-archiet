@@ -2,16 +2,6 @@
   (:require [hiccup.element :refer [javascript-tag]]
             [pl.torun.uni.mat.archiet.website.site :refer [base]]))
 
-(defn waka ([num-of-days-lang] (waka num-of-days-lang false))
-  ([num-of-days ca-not-lang?]
-   (let [lang-not-ca? (not ca-not-lang?)]
-     [:h5.waka (str (if lang-not-ca? "Languages" "Coding Activity")
-                    " over "
-                    (if (zero? num-of-days) "All Time"
-                        (str "Last " num-of-days " Days"))
-                    " (Powered by ")
-      [:a {:href "http://wakatime.com" :target "_blank"} "wakatime.com"]])))
-
 (defn render [{global :meta entry :entry}]
   (base :index
    [:span.headright]
@@ -57,10 +47,4 @@ jQuery.get({
        protected by governments.\""]
     [:footer "Edward Snowden"]]
    [:hr]
-   [:script {:type "text/javascript" :src "https://www.gstatic.com/charts/loader.js"}]
-   [:script {:type "text/javascript" :src "wakatimeget.js"}]
-   (waka 30 :codingactivity) [:div#actiwaka.actiwaka]
-   (waka 7) [:div#7d.piewaka]
-   (waka 30) [:div#30d.piewaka]
-   (waka 0) [:div#alltime.piewaka]
    ))

@@ -63,19 +63,6 @@ code.pgprev, .pgprev {
     font-size: 15px;
 }
 
-.actiwaka,
-.piewaka {
-	width: 100%;
-	min-height: 63vh;
-}
-
-h5.waka {
-	text-align: center;
-	font-family: monospace, Courier;
-	font-size: 14px;
-	font-weight: 500;
-}
-
 footer {
 	text-align: right;
 	padding: 10px;
