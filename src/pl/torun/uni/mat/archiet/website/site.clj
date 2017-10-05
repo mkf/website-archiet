@@ -2,7 +2,7 @@
   (:require [hiccup.core :refer [html]]
             [hiccup.page :refer [html5 include-css]]))
 
-(def overtitle "Strona Michała Krzysztofa Feilera na serwerze Platinum")
+(def overtitle "Michał K. Feiler, student WMiI UMK")
 
 (def title-order [:index])
 (def titles {:index {:title nil :nav "O mnie" :url "index.html"}
