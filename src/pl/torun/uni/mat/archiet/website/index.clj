@@ -1,6 +1,6 @@
-(ns pl.edu.platinum.archiet.website.index
+(ns pl.torun.uni.mat.archiet.website.index
   (:require [hiccup.element :refer [javascript-tag]]
-            [pl.edu.platinum.archiet.website.site :refer [base]]))
+            [pl.torun.uni.mat.archiet.website.site :refer [base]]))
 
 (def badges
   {:twitter {:url "https://twitter.com/feilermichal"

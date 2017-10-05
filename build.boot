@@ -9,7 +9,7 @@
                  ])
 
 (task-options!
- pom {:project 'pl.edu.platinum.archiet.website :version "0.1.0"})
+ pom {:project 'pl.torun.uni.mat.archiet.website :version "0.1.0"})
 
 (require '[io.perun :refer :all])
 
@@ -18,7 +18,5 @@
   []
   (comp (markdown)
         (permalink)
-        (static :page "index.html" :renderer 'pl.edu.platinum.archiet.website.index/render)
-        (static :page "portfolio.html" :renderer 'pl.edu.platinum.archiet.website.portfolio/render)
-        (sitemap :filename "sitemap.xml")
+        (static :page "index.html" :renderer 'pl.torun.uni.mat.archiet.website.index/render)
         ))

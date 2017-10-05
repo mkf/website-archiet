@@ -1,5 +1,5 @@
-(ns pl.edu.platinum.archiet.website.portfolio
-  (:require [pl.edu.platinum.archiet.website.site :refer [base]]))
+(ns pl.torun.uni.mat.archiet.website.portfolio
+  (:require [pl.torun.uni.mat.archiet.website.site :refer [base]]))
 
 (defn render [{global :meta entry :entry}]
   (base :portfolio

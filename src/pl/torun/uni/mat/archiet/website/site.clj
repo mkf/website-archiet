@@ -1,4 +1,4 @@
-(ns pl.edu.platinum.archiet.website.site
+(ns pl.torun.uni.mat.archiet.website.site
   (:require [hiccup.core :refer [html]]
             [hiccup.page :refer [html5 include-css]]))
 
