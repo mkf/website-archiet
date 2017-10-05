@@ -35,16 +35,4 @@ jQuery.get({
    [:p [:a {:href "xmpp:archiet@dukgo.com"} "xmpp:archiet@dukgo.com"]]
    [:br {:clear "all"}]
    [:hr]
-   [:blockquote.blockquote-reverse {:cite "http://fokus.dn.se/edward-snowden-english/"}
-    [:cite.snowdencit
-     "\"— Arguing that you don’t care about the right to privacy because you have
-       nothing to hide, is no different than saying you don’t care about free speech
-       because you have nothing to say, or the freedom of press because you’re not a
-       journalist, or the freedom of religion because you’re not a Christian. Rights
-       in societies are collective, and individual. You can’t give away the rights of
-       a minority, even if you vote as a majority. Rights are inherent to our nature,
-       they’re not granted by governments, they’re guaranteed by governments. They’re
-       protected by governments.\""]
-    [:footer "Edward Snowden"]]
-   [:hr]
    ))
