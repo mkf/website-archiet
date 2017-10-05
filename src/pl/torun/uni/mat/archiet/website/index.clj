@@ -2,6 +2,13 @@
   (:require [hiccup.element :refer [javascript-tag]]
             [pl.torun.uni.mat.archiet.website.site :refer [base]]))
 
+(defn an-email [address]
+  [:a {:href (str "mailto:Micha%C5%82%20Krzysztof%20Feiler<" address ">")}
+    (str "Michał Krzysztof Feiler &lt;" address "&gt;")])
+
+(defn emails [& addresses]
+  (vec (cons :p ((comp vec conj vec) (interpose [:br] (map an-email addresses))))))
+
 (defn render [{global :meta entry :entry}]
   (base :index
    [:span.headright]
@@ -19,9 +26,7 @@
     [:span.pgprev "72A3 D939 ECA2 67FB 0096  8F4B 8179 43C5 88A5 0062"]]
    [:h3 "Adresy"]
    [:h4 "Email"]
-   [:p
-    [:a {:href"mailto:Micha%C5%82%20Krzysztof%20Feiler<archiet@platinum.edu.pl>"}
-     "Michał Krzysztof Feiler &lt;archiet@platinum.edu.pl&gt;"] [:br]
+   (emails "archiet@mat.umk.pl" "archiet@platinum.edu.pl")
    [:h4 "Jabber/XMPP"]
    [:p [:a {:href "xmpp:archiet@dukgo.com"} "xmpp:archiet@dukgo.com"]]
    [:br {:clear "all"}]
