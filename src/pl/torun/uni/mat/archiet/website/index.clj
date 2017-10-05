@@ -22,15 +22,6 @@
    [:p
     [:a {:href"mailto:Micha%C5%82%20Krzysztof%20Feiler<archiet@platinum.edu.pl>"}
      "Michał Krzysztof Feiler &lt;archiet@platinum.edu.pl&gt;"] [:br]
-    [:script {:type "text/javascript" :src "jquery-2.2.3.min.js"}]
-    [:code#mailfinger.mailfinger]
-    (javascript-tag "
-jQuery.get({
-    url: 'http://archiet.platinum.edu.pl/mailfinger',
-    success: function (data) {
-        $('code.mailfinger').html(data)
-    }
-})")]
    [:h4 "Jabber/XMPP"]
    [:p [:a {:href "xmpp:archiet@dukgo.com"} "xmpp:archiet@dukgo.com"]]
    [:br {:clear "all"}]
