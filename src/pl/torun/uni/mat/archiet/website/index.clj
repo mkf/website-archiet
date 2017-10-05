@@ -27,8 +27,6 @@
    [:h3 "Adresy"]
    [:h4 "Email"]
    (emails "archiet@mat.umk.pl" "archiet@platinum.edu.pl")
-   [:h4 "Jabber/XMPP"]
-   [:p [:a {:href "xmpp:archiet@dukgo.com"} "xmpp:archiet@dukgo.com"]]
    [:br {:clear "all"}]
    [:hr]
    ))
