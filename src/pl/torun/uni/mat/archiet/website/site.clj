@@ -4,9 +4,8 @@
 
 (def overtitle "Strona Michała Krzysztofa Feilera na serwerze Platinum")
 
-(def title-order [:index :portfolio])
+(def title-order [:index])
 (def titles {:index {:title nil :nav "O mnie" :url "index.html"}
-             :portfolio {:title "Portfolio" :nav "Portfolio" :url "portfolio.html"}
              })
 
 (defn navbar-list [whichtitle]
