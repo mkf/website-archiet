@@ -1,6 +1,5 @@
 (ns pl.torun.uni.mat.archiet.website.index
-  (:require [hiccup.element :refer [javascript-tag]]
-            [pl.torun.uni.mat.archiet.website.site :refer [base]]))
+  (:require [hiccup.element :refer [javascript-tag]]))
 
 (defn an-email [address]
   [:a {:href (str "mailto:Micha%C5%82%20Krzysztof%20Feiler<" address ">")}
@@ -9,8 +8,8 @@
 (defn emails [& addresses]
   (vec (cons :p ((comp vec conj vec) (interpose [:br] (map an-email addresses))))))
 
-(defn render [{global :meta entry :entry}]
-  (base :index
+(defn render []
+  [:div.container
    [:span.headright]
    [:h1 "Michał Krzysztof Feiler"]
    [:side "Absolwent liceum, programista, fan wolnego oprogramowania."]
@@ -28,5 +27,5 @@
    [:h4 "Email"]
    (emails "archiet@mat.umk.pl" "archiet@platinum.edu.pl")
    [:br {:clear "all"}]
-   [:hr]
-   ))
+   [:hr]]
+   )

@@ -1,6 +1,7 @@
 (ns pl.torun.uni.mat.archiet.website.site
   (:require [hiccup.core :refer [html]]
-            [hiccup.page :refer [html5 include-css]]))
+            [hiccup.page :refer [html5 include-css]]
+            [pl.torun.uni.mat.archiet.website.index :as index-index]))
 
 (def overtitle "Michał K. Feiler, student WMiI UMK")
 
@@ -86,8 +87,7 @@
 (defn entry-url [{:keys [short-filename]}]
   (str "/~archiet/" entries-dir "/" short-filename ".html"))
 
-(defn index-top []
-  [:div.container [:hr] "O mnie" [:hr]])
+(def index-top index-index/render)
 
 (defn entry-rend [{:keys [title short-filename content]}]
   [:div.whole-post
@@ -95,7 +95,7 @@
    [:h2 short-filename]
    [:div.post-content content]])
 (defn entries-rend [entries]
-  (into [:div.entries] (map entry-rend entries)))
+  (into [:div.container] (map entry-rend entries)))
 
 (defn index-renderer [{:keys [entries]}]
   (base
