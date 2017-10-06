@@ -12,7 +12,7 @@
   [:div.container
    [:span.headright]
    [:h1 "Michał Krzysztof Feiler"]
-   [:side "Absolwent liceum, programista, fan wolnego oprogramowania."]
+   [:side "Student I roku informatyki, członek Koła Naukowego Informatyków, adept programowania funkcyjnego."]
    [:img.meright
     {:src "DSCF7629-bfab-fixed-squared-666px.png" :height "333px"
      :alt "Michał Krzysztof Feiler" :title "Michał Krzysztof Feiler w 2012"}]
