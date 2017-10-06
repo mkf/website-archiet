@@ -21,7 +21,7 @@
         ;;(static :page "index.html" :renderer 'pl.torun.uni.mat.archiet.website.index/render)
         (collection :renderer 'pl.torun.uni.mat.archiet.website.site/index-renderer
                     :page "index.html"
-                    :extensions [".md"])
+                    :extensions [".htm" ".html"])
         (sitemap)
         (print-meta)
         (target)
