@@ -91,8 +91,7 @@
 
 (defn entry-rend [{:keys [title short-filename content]}]
   [:div.whole-post
-   [:h1 title]
-   [:h2 short-filename]
+   [:h2.blogpost title]
    [:div.post-content content]])
 (defn entries-rend [entries]
   (into [:div.container] (map entry-rend entries)))
