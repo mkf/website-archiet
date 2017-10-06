@@ -16,7 +16,14 @@
 (deftask build
   "Build the site."
   []
-  (comp (markdown)
+  (comp (global-metadata) (markdown) (print-meta) (ttr) (word-count) (build-date)
         (permalink)
-        (static :page "index.html" :renderer 'pl.torun.uni.mat.archiet.website.index/render)
+        ;;(static :page "index.html" :renderer 'pl.torun.uni.mat.archiet.website.index/render)
+        (assortment :renderer 'pl.torun.uni.mat.archiet.website.site/index-renderer
+                    :grouper #(hash-map "index.html" %)
+                    :out-dir "entries"
+                    :extensions [".md"])
+        (sitemap)
+        (print-meta)
+        (target)
         ))
