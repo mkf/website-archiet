@@ -1,3 +1,42 @@
+html, body {
+    height: 100%
+}
+body {
+    padding: 50px 0 0 0;
+}
+
+.navmenu {
+    padding-top: 50px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    float: left;
+    margin-left: 15px;
+}
+
+.container {
+    max-width: 100%
+}
+
+@media (min-width: 1px) {
+    .navbar-toggle {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        padding: 0 0 0 300px;
+    }
+    .navmenu {
+        padding-top: 0;
+    }
+    .navbar {
+        display: none !important;
+    }
+}
+
 body.website {
 	margin: 40px auto;
 	max-width: 800px;
@@ -28,17 +67,6 @@ div.jumbotron {
 	max-width: 800px;
 	margin-left: 0px;
 	margin-right: 0px;
-}
-
-.navbar {
-	min-height: 38px;
-	height: 38px;
-}
-
-.navbar .navbar-nav > li > a {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	line-height: 38px;
 }
 
 .pgp, .pgprev {

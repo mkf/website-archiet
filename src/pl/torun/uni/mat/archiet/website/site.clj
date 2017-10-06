@@ -5,7 +5,7 @@
 (def overtitle "Michał K. Feiler, student WMiI UMK")
 
 (def specials-order [:index])
-(def the-specials {:index {:title nil :nav [:b "O mnie"] :url "/index.html"}})
+(def the-specials {:index {:title nil :nav [:b "O mnie"] :url "/~archiet/index.html"}})
 (def list-of-specials (mapv #(assoc (% the-specials) :key %) specials-order))
 
 (defn entry-nav-li [what-key {:keys [key url nav]}]
@@ -33,6 +33,12 @@
     (into [:ul.nav.navmenu-nav]
           (entries-nav what-key entries))]])
 
+(defn mininavbar []
+  [:div.navbar.navbar-default.navbar-fixed-top.hidden-md.hidden-lg
+   [:button.navbar-toggle {:type :button :data-toggle :offcanvas :data-target ".navmenu"}
+    [:span.icon-bar] [:span.icon-bar] [:span.icon-bar]]
+   [:a.navbar-brand {:href "/~archiet/index.html"} "MKF"]])
+
 (comment defn navbar-list [whichtitle]
   (into [:ul.nav.navbar-nav]
         (keep #(when (or (= % whichtitle)
@@ -41,7 +47,7 @@
                   [:a {:href (get-in titles [% :url])} (get-in titles [% :nav])]])
               title-order)))
 
-(defn base [title & contents]
+(defn base [title contents]
   (html5
    (:lang "pl")
    [:head
@@ -57,16 +63,20 @@
     [:link {:rel "stylesheet"
             :href "https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css"
             :crossorigin "anonymous"}]
-    [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"}]
-    (include-css "/styles.css")
-    [:link {:rel "shortcut icon" :href "favicon.ico" :type "image/x-icon"}]
-    [:link {:rel "icon" :type "image/png" :href "DSCF7629-bfab-fixed-squared-666px.png"}]
-    [:link {:rel "icon" :href "favicon.ico" :type "image/x-icon"}]]
-   (into [:body.website
+    (include-css "/~archiet/styles.css")
+    [:link {:rel "shortcut icon" :href "/~archiet/favicon.ico" :type "image/x-icon"}]
+    [:link {:rel "icon" :type "image/png" :href "/~archiet/DSCF7629-bfab-fixed-squared-666px.png"}]
+    [:link {:rel "icon" :href "/~archiet/favicon.ico" :type "image/x-icon"}]]
+   (into [:body
           [:noscript [:iframe {:src "//www.googletagmanager.com/ns.html?id=GTM-KP8WW2"
                                :height "0" :width "0" :style "display:none;visibility:hidden"}]]
-          [:script {:type "text/javascript" :src "naszgtm.js"}]]
-         contents
+          [:script {:type "text/javascript" :src "/~archiet/naszgtm.js"}]]
+         (into
+          (vec contents)
+          [[:script {:src "https://code.jquery.com/jquery-1.10.2.min.js"}]
+           [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"}]
+           [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"}]
+            ])
          )))
 
 (defn entry-html-filename [{:keys [short-filename]}]
@@ -74,10 +84,10 @@
 
 (def entries-dir "entries")
 (defn entry-url [{:keys [short-filename]}]
-  (str entries-dir "/" short-filename ".html"))
+  (str "/~archiet/" entries-dir "/" short-filename ".html"))
 
 (defn index-top []
-  [:div.about-me [:hr] "O mnie" [:hr]])
+  [:div.container [:hr] "O mnie" [:hr]])
 
 (defn entry-rend [{:keys [title short-filename content]}]
   [:div.whole-post
@@ -87,15 +97,16 @@
 (defn entries-rend [entries]
   (into [:div.entries] (map entry-rend entries)))
 
-(defn index-renderer [entries]
+(defn index-renderer [{:keys [entries]}]
   (base
-   nil
+   (println "tu jest nil")
    (let [_ (println (pr-str entries))
          entries-nav (mapv #(hash-map
                             :key (:short-filename %)
                             :nav (:title %)
                             :url (entry-url %)) entries)]
      [(the-nav :index entries-nav)
+      (mininavbar)
       (index-top)
       (entries-rend entries)]
      )))

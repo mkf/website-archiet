@@ -19,9 +19,8 @@
   (comp (global-metadata) (markdown) (print-meta) (ttr) (word-count) (build-date)
         (permalink)
         ;;(static :page "index.html" :renderer 'pl.torun.uni.mat.archiet.website.index/render)
-        (assortment :renderer 'pl.torun.uni.mat.archiet.website.site/index-renderer
-                    :grouper #(hash-map "index.html" %)
-                    :out-dir "entries"
+        (collection :renderer 'pl.torun.uni.mat.archiet.website.site/index-renderer
+                    :page "index.html"
                     :extensions [".md"])
         (sitemap)
         (print-meta)
