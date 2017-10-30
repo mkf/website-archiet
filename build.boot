@@ -6,12 +6,14 @@
                  [perun "0.4.2-SNAPSHOT"]
                  [clj-time "0.13.0"]
                  ;;[boot-ssh "0.1.1-SNAPSHOT"]
+                 [pandeiro/boot-http "0.8.3"]
                  ])
 
 (task-options!
  pom {:project 'pl.torun.uni.mat.archiet.website :version "0.1.0"})
 
-(require '[io.perun :refer :all])
+(require '[io.perun :refer :all]
+         '[pandeiro.boot-http :refer [serve]])
 
 (deftask build
   "Build the site."
@@ -26,3 +28,9 @@
         (print-meta)
         (target)
         ))
+
+(deftask dev
+  []
+  (comp (watch)
+        (build)
+        (serve :resource-root "/")))
