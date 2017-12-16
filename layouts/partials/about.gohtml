@@ -1,29 +1,33 @@
 <div class="container">
 <span class="headright">
+</span>
 	<h1>Michał Krzysztof Feiler</h1>
-        <side>Student I roku informatyki, członek Koła Naukowego Informatyków,
-            adept programowania funkcyjnego.</side>
-        <img class="meright" alt="Michał Krzysztof Feiler"
-             title="Michał Krzysztof Feiler"
-             src="{{ "DSCF7629-bfab-fixed-squared-666px.png" | absURL }}"/>
-        <br/><hr/><h2>Kontakt</h2>
-        <a href="{{ "ArchieT.key" | absURL }}">
-            <span class="pgp">6ACF 4FCE E9BC DE97 5C81 &nbsp;
+	<side>Student I roku informatyki, członek Koła Naukowego Informatyków,
+		adept programowania funkcyjnego.
+	</side>
+	<img class="meright" alt="Michał Krzysztof Feiler"
+	     title="Michał Krzysztof Feiler"
+	     src="{{ "DSCF7629-bfab-fixed-squared-666px.png" | absURL }}"/>
+	<br/>
+	<hr/>
+	<h2>Kontakt</h2>
+    <h3>Mój klucz publiczny OpenPGP</h3>
+	<a href="{{ "ArchieT.key" | absURL }}">
+            <span class="pgp">6ACF 4FCE E9BC DE97 5C81&nbsp;
                 4A49 599D 6671 880D 22D6</span>
-        </a><br/>
-        <a href="{{ "ArchieT.old.key" | absURL }}">
-            <span class="pgprev">72A3 D939 ECA2 67FB 0096 &nbsp;
+	</a><br/>
+	<a href="{{ "ArchieT.old.key" | absURL }}">
+            <span class="pgprev">72A3 D939 ECA2 67FB 0096&nbsp;
                 8F4B 8179 43C5 88A5 0062</span>
-        </a>
-        <h3>Adresy</h3>
-        <h4>Email</h4>
-        $for(myemails)$
-{{range $.Site.Data.about.myemails }}
+	</a>
+	<h3>Adresy</h3>
+	<h4>Email</h4>
+	{{/*$for(myemails)$*/}}
+{{range $.Site.Data.about.my_emails }}
 	<a href="mailto:Micha%C5%82%20Krzysztof%20Feiler<{{ . }}>">
-            Michał Krzysztof Feiler &lt;{{ . }}&gt;
-    </a>
-        <br/>
+		Michał Krzysztof Feiler &lt;{{ . }}&gt;
+	</a>
+	<br/>
 {{/*$sep$ <br/>*/}}
 {{ end }}
-</span>
 </div>

@@ -15,12 +15,13 @@
 	<link rel="stylesheet"
 	      href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css"
 	      crossorigin="anonymous"/>
-    {{ partial "partials/about.html" . }}
+    {{ partial "favicons.gohtml" . }}
 	<link rel="stylesheet" href="{{ "styles.css" | absURL }}"/>
 {{ block "add-head" . }} {{ end }}
 </head>
 <body>
 <!-- miejsce na noscript google tag managera i na naszgtm.js -->
+	{{ partial "nav.gohtml" . }}
 {{ block "main" . }} {{ end }}
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
