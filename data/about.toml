@@ -1,6 +1,4 @@
-{
-  "my_emails": [
+my_emails = [
     "archiet@mat.umk.pl",
     "archiet@platinum.edu.pl"
-  ]
-}
+]
