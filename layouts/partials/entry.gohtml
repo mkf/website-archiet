@@ -1,0 +1,23 @@
+<div class="whole-post">
+	<hr>
+	<h2 class="blogpost">
+		<a href="{{ .URL | absURL }}">
+        {{ .Title }}
+		</a>
+	</h2>
+	<p align="right">
+        <span style="color: #777; ">
+            Reading time: {{ .EntryTTR }} mins.
+            Date published: {{ .Published }}
+        </span>
+	</p>
+	<div class="post-content">{{ .Content }}</div>
+	<p>
+		<span style="color: #777; ">
+			Tags:
+        {{ range .Tags }}
+			{{ . }} {{/*TODO: make it a link to tags/tag */}}
+			{{ end }}
+		</span>
+	</p>
+</div>
