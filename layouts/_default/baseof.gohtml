@@ -3,7 +3,7 @@
 <meta charset="UTF-8"/>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>$title$</title>
+	<title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet"
@@ -15,18 +15,15 @@
 	<link rel="stylesheet"
 	      href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css"
 	      crossorigin="anonymous"/>
+    {{ partial "partials/about.html" . }}
 	<link rel="stylesheet" href="{{ "styles.css" | absURL }}"/>
-	<link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon"/>
-	<link rel="icon" type="image/png"
-	      href="{{ "DSCF7629-bfab-fixed-squared-666px.png" | absURL }}"/>
-	<link rel="icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon"/>
-	<!-- tu był add-head w clojure-owym dokonkatenowany -->
-	$add-head$
+{{ block "add-head" . }} {{ end }}
 </head>
 <body>
 <!-- miejsce na noscript google tag managera i na naszgtm.js -->
-$body$
+{{ block "main" . }} {{ end }}
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
 </body>
+</html>
