@@ -54,6 +54,14 @@ p.mnie {
     text-align: justify;
 }
 
+span.mniehead {
+    font-size: 80%;
+}
+
+a.mniealong {
+    font-size: 110%;
+}
+
 span.matrixtohead {
     font-family: monospace;
     font-size: 0.79em;
@@ -160,5 +168,9 @@ span.projlang {
 h2 {
     padding-top: 80px;
     margin-top: -80px;
+}
+
+li.nav-item, a.nav-link, div.linknav {
+    vertical-align: center;
 }
 
