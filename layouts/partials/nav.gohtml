@@ -1,54 +1,33 @@
-<nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="{{ "DSCF7629-bfab-fixed-squared-666px.png" | absURL }}"
-             height="30" alt="Michał K. Feiler"/>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link"
-                   href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}#myname">
-                    Strona główna
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"
-                   href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}#kontakt">
-                    Kontakt
-                </a>
-            </li>
-	        <li class="nav-item">
-		        <a class="nav-link"
-		           href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}#follow"
-                   >
-                    Śledź mnie
-		        </a>
-	        </li>
-            <li class="nav-item">
-                <a class="nav-link"
-                   href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}#omnie">
-	                O mnie
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"
-                   href="http://mat.umk.pl/~archiet"
-                   target="_blank">
-                    Ja student
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"
-                   href="http://archiet.platinum.edu.pl"
-                   target="_blank">
-                    Stara wersja
-                </a>
-            </li>
-        </ul>
-    </div>
+<nav id="topnav" class="topnav">
+	<a class="navbar-brand" href="#">
+		<img src="{{ "DSCF7629-bfab-fixed-squared-666px-scale30.png" | absURL }}"
+		     height="30" alt="Michał K. Feiler"/>
+	</a>
+	<a class="nav-link"
+	   href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}#myname">
+		Strona główna
+	</a>
+	<a class="nav-link"
+	   href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}#kontakt">
+		Kontakt
+	</a>
+	<a class="nav-link"
+	   href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}#follow"
+	>
+		Śledź mnie
+	</a>
+	<a class="nav-link"
+	   href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}#omnie">
+		O mnie
+	</a>
+	<a class="nav-link"
+	   href="http://mat.umk.pl/~archiet"
+	   target="_blank">
+		Ja student
+	</a>
+	<a class="nav-link"
+	   href="http://archiet.platinum.edu.pl"
+	   target="_blank">
+		Stara wersja
+	</a>
 </nav>
