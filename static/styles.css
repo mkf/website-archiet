@@ -3,6 +3,7 @@
 /*}*/
 body {
     padding: 50px 0 0 0;
+    font-size: 13pt;
 }
 
 /*
@@ -43,11 +44,11 @@ body {
 */
 
 h1.myname {
-    padding-top: 0.5em;
+    /*padding-top: 0.2em;*/
 }
 
 div.myadresses {
-    padding-bottom: 0.8em;
+    padding-bottom: 0.5em;
 }
 
 p.mnie {
@@ -55,16 +56,16 @@ p.mnie {
 }
 
 span.mniehead {
-    font-size: 80%;
+    font-size: 82%;
 }
 
 a.mniealong {
-    font-size: 110%;
+    font-size: 100%;
 }
 
 span.matrixtohead {
     font-family: monospace;
-    font-size: 0.79em;
+    font-size: 0.89em;
     color: #999;
 }
 
@@ -166,11 +167,13 @@ span.projlang {
 }
 
 h2 {
-    padding-top: 80px;
+    padding-top: 120px;
     margin-top: -80px;
 }
 
 li.nav-item, a.nav-link, div.linknav {
+    display: inline-block;
     vertical-align: center;
+    margin: 10px;
 }
 
