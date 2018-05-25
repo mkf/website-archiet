@@ -177,3 +177,13 @@ li.nav-item, a.nav-link, div.linknav {
     margin: 10px;
 }
 
+img.roundme {
+    /*content: url("IMG_20170530_205342_797_100px.png");*/
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+img.smallfloat {
+    float: right;
+}
