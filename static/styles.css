@@ -219,8 +219,19 @@ td.daty {
 }
 
 td.whatschool, td.story-where, td.story-desc, td.story-dates {
-    padding: 0.1em 1em;
+    padding: 0.1em 0.8em 0.1em 1em;
     border: 1px solid #777;
     /*display: block;*/
+    font-size: 82%;
 }
 
+td.story-desc {
+    font-size: 78%;
+    padding: 0.1em 0.5em 0.5em 0.7em;
+    vertical-align: center;
+}
+
+td.story-dates {
+    font-size: 78%;
+    padding: 0.2em 0.5em 0.2em 1em;
+}
