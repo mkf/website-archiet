@@ -205,24 +205,22 @@ table.story {
     /*border-spacing: 0.2em 0.2em;*/
     border: 1px solid #777;
 }
-tr.story {
-    border: 1px solid #777;
-}
-td.endschool {
-    padding-right: 1.5em;
-    border-right: 1px solid #777;
-}
-td.endschool, td.dash, td.startschool {
-    border-top: 1px solid #777;
-    border-bottom: 1px solid #777;
+span.endschool, span.dash, span.startschool {
 }
 
-td.startschool {
-    border-left: 1px solid #777;
+span.startschool {
+}
+
+td.daty {
+    /*display: block;*/
+    border: 1px solid #777;
     padding-left: 1em;
+    padding-right: 1.5em;
 }
 
 td.whatschool, td.story-where, td.story-desc, td.story-dates {
     padding: 0.1em 1em;
     border: 1px solid #777;
+    /*display: block;*/
 }
+
