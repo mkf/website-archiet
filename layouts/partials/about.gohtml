@@ -1,80 +1,55 @@
-<!--suppress Annotator, Annotator -->
-<div class="container" data-spy="scroll" data-target="#navbar" data-offset="50">
-<span class="headright">
-</span>
-	<h1 id="myname" class="myname">Michał Krzysztof Feiler</h1>
-	<img class="roundme smallfloat" id="meroundinheader"
-        src="{{ "IMG_20170530_205342_797_100px.jpg" | absURL }}"/>
-	<span class="tenside">
-        Student I roku informatyki, członek Koła Naukowego Informatyków,
-		adept programowania funkcyjnego.
-	</span>
-	<img class="meright" alt="Michał Krzysztof Feiler"
-	     title="Michał Krzysztof Feiler"
-	     src="{{ "DSCF7629-bfab-fixed-squared-666px.png" | absURL }}"/>
-	<hr/>
+{{/*<!--suppress Annotator, Annotator -->*/}}
+{{/*<!--div class="container" data-spy="scroll" data-target="#navbar" data-offset="50"-->*/}}
+{{/*<span class="headright">*/}}
+{{/*</span>*/}}
+        {{partial "klik/kontakt.gohtml" . }}
+{{partial "klik/sledz.gohtml" . }}
+        <table class="story schoolstory" id="schools">
+            <tr class="story schoolstory">
+                <td class="story startschool">2017</td>
+                <td class="dash">–</td>
+                <td class="endschool obecnie">obecnie</td>
+                <td class="whatschool">informatyka na
+                    <a href="https://mat.umk.pl">
+                        Wydziale Matematyki i Informatyki<br> Uniwersytetu Mikołaja Kopernika w Toruniu</a>
+                </td>
+            </tr>
+            <tr class="story schoolstory">
+                <td class="startschool">2014</td>
+	            <td class="dash">–</td>
+                <td class="endschool">2017</td>
+                <td class="whatschool">maf-fiz-inf @ <br>
+                    <a href="https://loiv.torun.pl">
+                        IV Liceum Ogólnokształcące im. Tadeusza Kościuszki w Toruniu
+                    </a>
+                </td>
+            </tr>
+            <tr class="story schoolstory">
+                <td class="startschool">2011</td>
+	            <td class="dash">–</td>
+                <td class="endschool">2014</td>
+                <td class="whatschool">mat-inf @ Gimnazjum nr 24 w Toruniu im. Szarych Szeregów</td>
+            </tr>
+        </table>
+        <table class="story" id="jobs">
+            <tr class="story jobstory">
+                <td class="story-dates dates-right">lip&sie 2016 <br> cze 2017</td>
+                <td class="story-where">DLabs</td>
+                <td class="story-desc">Python, Docker, MongoDB</td>
+            </tr>
+            <tr class="story jobstory">
+                <td class="story-dates dates-right">lip&sie 2017</td>
+                <td class="story-where">kapware.com — Paweł Kapała</td>
+                <td class="story-desc">ClojureScript, ReactNative</td>
+            </tr>
+        </table>
+<img class="meright" alt="Michał Krzysztof Feiler"
+     title="Michał Krzysztof Feiler"
+     src="{{ "DSCF7629-bfab-fixed-squared-666px-333px.png" | absURL }}"/>
     <h2 id="aboutshort"> O mnie (krótko) </h2>
     <span class="mniehead">
         {{ partial "omniehead.gohtml" .}}
-        <a href="#omnie" class="mniealong">Czytaj więcej i większą czcionką...</a>
+        <a href="{{"omnie" | absURL}}" class="mniealong">Czytaj więcej i większą czcionką...</a>
 	</p>
     </span>
-	<h2 id="kontakt">Kontakt</h2>
-	<h3>Mój klucz publiczny OpenPGP</h3>
-	<a href="{{ "ArchieT.key" | absURL }}">
-            <span class="pgp">6ACF 4FCE E9BC DE97 5C81&nbsp;
-                4A49 599D 6671 880D 22D6</span>
-	</a><br/>
-	<a href="{{ "ArchieT.old.key" | absURL }}">
-            <span class="pgprev">72A3 D939 ECA2 67FB 0096&nbsp;
-                8F4B 8179 43C5 88A5 0062</span>
-	</a>
-	<h3>Adresy</h3>
-	<h4>Email</h4>
-	<div class="myadresses">
-    {{/*$for(myemails)$*/}}
-    {{range $.Site.Data.about.my_emails }}
-		<a href="mailto:Micha%C5%82%20Krzysztof%20Feiler%3c{{ . }}%3e">
-			Michał Krzysztof Feiler &lt;{{ . }}&gt;
-		</a>
-		<br/>
-    {{/*$sep$ <br/>*/}}
-    {{ end }}
-	</div>
-	<h4>Czat<!--a href="https://matrix.org">Matrix</a--></h4>
-    <h5>Sieć Matrix</h5>
-	<div class="myadresses">
-		<a href="https://matrix.to/#/@ArchieT:matrix.org">
-		<span class="matrixtohead">
-            https://matrix.to/#/</span><span class="matrixaddress">@ArchieT:matrix.org
-        </span>
-		</a>
-	</div>
-    <h5>Komunikator Telegram</h5>
-    <div class="myadresses">
-        <a href="https://t.me/ArchieT">
-            <span class="matrixtohead">
-            https://t.me/</span><span class="matrixaddress">ArchieT
-            </span>
-        </a>
-    </div>
-    <h2 id="follow">Śledź mnie, znajdź mnie</h2>
-    <p>Jestem <a href="https://twitter.com/feilermichal" target="_blank">@feilermichal na Twitterze</a>,
-    ale też <a href="https://bsd.network/archiet">@archiet@bsd.network w sieci federacji Mastodon</a>.
-    Swoje projekty publikuję często <a href="https://github.com/ArchieT">na GitHubie jako ArchieT</a>.
-    Możesz mnie też chcieć <a href="https://linkedin.com/in/feilermichal">znaleźć na LinkedIn</a>
-    lub <a href="https://www.goldenline.pl/michal-krzysztof-feiler" target="_blank">może na GoldenLine</a>.
-    Możesz też trochę zweryfikować mój klucz publiczny
-    <a href="https://keybase.io/archiet" target="_blank">znajdując mnie na Keybase</a>.
-    Czasem, rzadko, <a href="https://medium.com/@ArchieT" target="_blank">piszę coś na Medium</a>,
-    czasem <a href="https://archietor.tumblr.com">pojawia się też jakiś content na moim Tumblrze</a>.
-    Jeżeli chcesz, <a href="https://plus.google.com/u/0/100176969216547798972?prsrc=3" target="_blank">
-            znajdziesz mnie też na Google+</a>
-    , a <a href="https://facebook.com/feilermichal" target="_blank">nawet na Facebooku</a>.
-    No i <a href="https://wakatime.com/@ArchieT" target="_blank">możesz śledzić statystyki mojej aktywności w edytorze tekstu na WakaTime</a>.
-    A także <a href="https://www.last.fm/user/feilermichal" target="_blank">
-            śledzić, czego słuchałem kiedyś i dziś przed chwilą — w serwisie LastFM
-        </a>. </p>
-	<h2 id="omnie"> O mnie (długo) </h2>
-    {{ partial "omnietail.gohtml" . }}
-</div>
+{{/*<!--/div-->*/}}

@@ -2,6 +2,5 @@ baseURL = "https://archiet.pl/"
 languageCode = "pl"
 title = "Michał K. Feiler, student WMiI UMK"
 
-[permalinks]
-  post = "/posts/:filename/"
-  top = "/:filename"
+#[permalinks]
+#  post = "/posts/:filename/"
