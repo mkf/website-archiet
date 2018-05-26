@@ -235,3 +235,14 @@ td.story-dates {
     font-size: 78%;
     padding: 0.2em 0.5em 0.2em 1em;
 }
+
+th.story {
+    font-size: 50%;
+    border: 1px solid #777;
+}
+
+tr.proglangs td {
+    border: 1px solid #777;
+    padding-left: 0.4em;
+    padding-right: 0.2em;
+}
