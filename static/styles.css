@@ -219,6 +219,7 @@ td.endschool, td.dash, td.startschool {
 
 td.startschool {
     border-left: 1px solid #777;
+    padding-left: 1em;
 }
 
 td.whatschool, td.story-where, td.story-desc, td.story-dates {
