@@ -246,3 +246,19 @@ tr.proglangs td {
     padding-left: 0.4em;
     padding-right: 0.2em;
 }
+
+div.postlistdate, div.postlistert {
+    display: inline-block;
+}
+
+div.postlistert {
+    color: #888;
+}
+
+div.postlistert:after {
+    content: ' min';
+}
+
+div.postlistert:before {
+    content: 'Est. reading time: ';
+}
