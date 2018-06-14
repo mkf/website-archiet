@@ -28,7 +28,11 @@ title: Fotografie z moją twarzą
 - [kilka zdjęć z TFNiS 2017](tfnis2017)
 
 ---------
+- [kilka zdjęć po Via Lux Ingress XM Anomaly Wrocław Primary Mission Day dnia&nbsp;28&nbsp;sierpnia&nbsp;2016&nbsp;roku](vialuxwroclaw)
+
+---------
 - [poruszone zdjęcie mnie na korytarzu szkolnym dnia 16 grudnia 2013 roku](nakorytarzuszkolnym20131216)
+- [dwa zdjęcia mnie na wycieczce klasowej do Babiogórskiego PN w 2015 (fot.&nbsp;Patryk&nbsp;Kisielewski)](babiogorskipn2015)
 
 ---------
 - [kilka selfie na zewnątrz i wewnątrz Kościuszko Business Point, 23 grudnia 2017](kosciuszkobusinesspointselfie20171223)
