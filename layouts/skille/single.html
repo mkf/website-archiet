@@ -1,0 +1,9 @@
+{{ define "title" }}
+{{ .Title }} :: {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+{{partial "klik/omnie.gohtml" }}
+{{partial "klik/kontakt.gohtml" }}
+{{partial "klik/sledz.gohtml" }}
+{{ .Content }}
+{{ end }}
