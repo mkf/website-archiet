@@ -1,3 +1,3 @@
 ---
-title: ./pr/f/hs/_index.md
+title: Haskell
 ---

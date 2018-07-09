@@ -1,7 +1,7 @@
 ---
-title: pkglocate
+title: I couldn't pkglocate pkglocate
 type: tweet
-date: 2018-07-09T10:23:00
+date: 2018-07-09T10:23:00+02:00
 tuser: michalkfeiler
 tnum: 1016236304537964544
 ---

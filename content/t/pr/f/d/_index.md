@@ -1,3 +1,3 @@
 ---
-title: ./pr/f/d/_index.md
+title: Programowanie funkcyjne zależnie typowane
 ---

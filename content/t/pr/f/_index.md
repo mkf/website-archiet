@@ -1,3 +1,3 @@
 ---
-title: ./pr/f/_index.md
+title: Programowanie czysto funkcyjne
 ---

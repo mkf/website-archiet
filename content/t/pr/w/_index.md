@@ -1,3 +1,3 @@
 ---
-title: ./pr/w/_index.md
+title: WWW — "webowe"
 ---

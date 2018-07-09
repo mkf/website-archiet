@@ -247,7 +247,7 @@ tr.proglangs td {
     padding-right: 0.2em;
 }
 
-div.postlistdate, div.postlistert {
+div.postlistdate, div.postlistert, div.postlisttype {
     display: inline-block;
 }
 
@@ -261,4 +261,13 @@ div.postlistert:after {
 
 div.postlistert:before {
     content: 'Est. reading time: ';
+}
+
+div.postlisttype {
+    color: #AAA;
+    font-size: 60%;
+}
+
+div.postlisttype:before {
+    content: 'type: ';
 }
