@@ -1,0 +1,17 @@
+{{define "title"}}
+        {{partial "title.gohtml" .}}
+        {{ end }}
+{{define "main"}}
+        {{partial "klik/up.gohtml" .}}
+<section id="main">
+	<h1 id="title" style="margin-bottom: 0.2em;">{{ .Title }}</h1>
+	<div>
+        <a target="_blank"
+           href="https://twitter.com/{{.Params.tuser}}/status/{{.Params.tnum}}">
+            twitter.com/{{.Params.tuser}}/status/{{.Params.tnum}}</a> :
+		<article id="content">
+        {{ .Content }}
+		</article>
+	</div>
+</section>
+{{end}}

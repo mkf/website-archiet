@@ -1,18 +1,5 @@
-{{ define "title" }}
-{{ .Title }} :: {{ .Site.Title }}
-{{ end }}
+{{ define "title" }}{{ partial "title.gohtml" . }}{{ end }}
 {{ define "main" }}
-<section id="main">
-	<h1 id="title" style="margin-bottom: 0.2em;">{{ .Title }}</h1>
-	<div>
-		<article id="content">
-        {{ range .Data.Pages }}
-			<li>
-				<a href="{{.Permalink}}">{{.Title}}</a>
-				<div class="postlistdate">{{.Date.Format "Jan 02, 2006"}}</div>
-				<div class="postlistert">{{ .ReadingTime }}</div>
-			</li>
-        {{ end }}
-		</article>
-	</div>
-</section>
+    {{ partial "klik/up.gohtml" . }}
+    {{ partial "postbasic.gohtml" . }}
+{{ end }}
