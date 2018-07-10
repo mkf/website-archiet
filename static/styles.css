@@ -247,7 +247,7 @@ tr.proglangs td {
     padding-right: 0.2em;
 }
 
-div.postlistdate, div.postlistert, div.postlisttype {
+div.postlistdate, div.postlistert, div.postlisttype, div.postlistsecdesc {
     display: inline-block;
 }
 
@@ -270,4 +270,14 @@ div.postlisttype {
 
 div.postlisttype:before {
     content: 'type: ';
+}
+
+.postlistdesc, .postlistsecdesc {
+    font-size: 65%;
+    color: #333;
+}
+
+span.postsectiondesc {
+    font-size: 60%;
+    color: #AAA;
 }

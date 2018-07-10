@@ -1,5 +1,6 @@
 ---
 title: Go
+description: statycznie typowany kompilowany do natywnego kodu maszynowego język stworzony w Google
 ---
 
 W półtora roku po [odkryciu przez mnie Pythona, moje uwielbienie
