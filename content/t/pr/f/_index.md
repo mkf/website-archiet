@@ -19,4 +19,5 @@ Byłem bardzo wymagający w moich oczekiwaniach wobec Haskella,
 wybierałem bardzo wiele rozszerzeń języka spoza standardu.
 Obecnie tego czego szukam mogą mi dać tylko języki programowania
 zależnie typowane, czyli efektywnie silniki dowodzenia — z tych 
-obecnie powoli zaczynam nurkować w Coq, chociaż patrzę też na Agdę.
+obecnie powoli zaczynam nurkować w Coq,
+chociaż patrzę też na Agdę i Idris.
