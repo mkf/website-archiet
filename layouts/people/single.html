@@ -1,0 +1,10 @@
+{{ define "title" }}
+{{ .Title }} :: {{ .Site.Title }}
+{{ end }}
+{{ define "add-head" }}
+<link rel="profile" href="http://gmpg.org/xfn/11">
+{{ end }}
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+{{ end }}

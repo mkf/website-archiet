@@ -262,3 +262,40 @@ div.postlistert:after {
 div.postlistert:before {
     content: 'Est. reading time: ';
 }
+
+a.person {
+    display: block;
+}
+
+a.person[href]:hover {
+    background-color: #EEF;
+    cursor: pointer;
+}
+
+a.person:not([href]):hover {
+    background-color: #FEE;
+    cursor: not-allowed;
+}
+
+div.person a.person:hover {
+    background-color: #DFD;
+    cursor: ns-resize;
+}
+
+desc.person {
+    border: 1px solid #EEE;
+    border-left: 4px solid #000;
+    padding-left: 10px;
+}
+
+.person-show {
+    display: none;
+}
+
+div.person > .person-show:checked + desc.person {
+    display: block;
+}
+
+div.person > .person-show:not(:checked) + desc.person {
+    display: none;
+}
