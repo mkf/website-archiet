@@ -1,6 +1,0 @@
-baseURL = "https://archiet.pl/"
-languageCode = "pl"
-title = "Michał K. Feiler, student I roku informatyki"
-
-#[permalinks]
-#  post = "/posts/:filename/"
