@@ -1,0 +1,15 @@
+[[redirects]]
+    from = "https://archiet.pl/*"
+    to = "https://a.archiet.pl/:splat"
+
+[[redirects]]
+    from = "http://archiet.pl/*"
+    to = "http://a.archiet.pl/:splat"
+
+[[redirects]]
+    from = "https://www.archiet.pl/*"
+    to = "https://a.archiet.pl/*"
+
+[[redirects]]
+    from = "http://www.archiet.pl/*"
+    to = "http://a.archiet.pl/*"
