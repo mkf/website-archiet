@@ -1,0 +1,4 @@
+https://archiet.pl/* https://a.archiet.pl/:splat 301!
+http://archiet.pl/* http://a.archiet.pl/:splat 301!
+https://www.archiet.pl/* https://a.archiet.pl/:splat 301!
+http://www.archiet.pl/* http://a.archiet.pl/:splat 301!
