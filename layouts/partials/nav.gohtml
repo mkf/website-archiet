@@ -1,17 +1,17 @@
 <nav id="topnav" class="topnav">
 	<a class="navbar-brand" href="#">
-		<img src="{{ "DSCF7629-bfab-fixed-squared-666px-scale30.png" | absURL }}"
+		<img src="{{ "DSCF7629-bfab-fixed-squared-666px-scale30.png" | relURL }}"
 		     height="30" alt="Michał K. Feiler"/></a>
 	<a class="nav-link"
-	   href="{{if .IsHome}}{{else}}{{"index.html" | absURL}}{{end}}">
+	   href="{{if .IsHome}}{{else}}{{"index.html" | relURL}}{{end}}">
 		O mnie
 	</a>
 	<a class="nav-link"
-	   href="{{"kontakt" | absURL}}">
+	   href="{{"kontakt" | relURL}}">
 		Kontakt
 	</a>
 	<a class="nav-link"
-	   href="{{"sledz" | absURL}}"
+	   href="{{"sledz" | relURL}}"
 	>
 		Śledź mnie
 	</a>
@@ -26,7 +26,7 @@
 		Stara wersja
 	</a>
 	<a class="nav-link"
-	   href="{{"wpisy" | absURL}}">
+	   href="{{"wpisy" | relURL}}">
 		Wpisy
 	</a>
 </nav>
