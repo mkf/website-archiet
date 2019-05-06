@@ -1,11 +1,10 @@
-{{ define "title" }}
-{{ .Title }} :: {{ .Site.Title }}
-{{ end }}
-{{ define "main" }}
-{{ partial "klik/omnie.gohtml" . }}
-{{partial "klik/sledz.gohtml" . }}
-<h2 id="kontakt">Kontakt</h2>
-<h3>Mój klucz publiczny OpenPGP</h3>
+{% extends "baseof.html.j2" %}
+{% block title %}{{ strjez['Kontakt'] }}{% endblock %}
+{% block main %}
+{% include "klik/omnie.html.j2" %}
+{% include "klik/sledz.html.j2" %}}
+<h2 id="kontakt">{{ strjez['Kontakt'] }}</h2>
+<h3>{{ strjez['MojkluczpublicznyOpenPGP'] }}</h3>
 <a href="{{ "ArchieT.key" | relURL }}">
 <span class="pgp">6ACF 4FCE E9BC DE97 5C81&nbsp;
                 4A49 599D 6671 880D 22D6</span>
@@ -14,7 +13,7 @@
 <span class="pgprev">72A3 D939 ECA2 67FB 0096&nbsp;
                 8F4B 8179 43C5 88A5 0062</span>
 </a>
-<h3>Adresy</h3>
+<h3>{{ strjez['Adresy'] }}</h3>
 <h4>Email</h4>
 <div class="myadresses">
 	{{/*$for(myemails)$*/}}

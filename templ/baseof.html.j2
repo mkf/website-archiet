@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode | default "pl" }}">
+<html lang="{{ lang }}">
 <head>
-	<title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+	<title>{% block title %}{% endblock %} :: {{ sitetitle }}</title>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-{{ partial "favicons.gohtml" . }}
-	<link rel="stylesheet" href="{{ "styles.css" | relURL }}"/>
-{{ block "add-head" . }} {{ end }}
+{% include "favicons.html" %}
+	<link rel="stylesheet" href="/styles.css"/>
+{% block add-head %} {% endblock %}
 </head>
 <body class="website">
-{{ partial "nav.gohtml" . }}
+{% include "nav.html.j2" %}
 <h1 id="myname" class="myname">Michał Krzysztof Feiler</h1>
 <img class="roundme smallfloat" id="meroundinheader"
-     src="{{ "IMG_20170530_205342_797_100px.png" | relURL }}"/>
+     src="{{ meroundinheaderimgsrc }}"/>
 <span class="tenside">
+{% block tenside %}
         Student I roku informatyki, adept programowania funkcyjnego.<br>
         Próbował robić programowanie funkcyjne zanim o nim usłyszał.
-	</span>
+{% endblock %}
+</span>
 <hr/>
-{{ block "main" . }} {{ end }}
+{% block main %} {% endblock %}
 </body>
 </html>

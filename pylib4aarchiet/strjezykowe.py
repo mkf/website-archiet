@@ -1,0 +1,5 @@
+pojezykachkolejne = {
+    
+}
+
+strjez
