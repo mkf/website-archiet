@@ -4,8 +4,8 @@
 {{ define "main" }}
 {{ partial "klik/omnie.gohtml" . }}
 {{partial "klik/sledz.gohtml" . }}
-<h2 id="kontakt">Kontakt</h2>
-<h3>Mój klucz publiczny OpenPGP</h3>
+<h2 id="kontakt">{{i18n "kontakt"}}</h2>
+<h3>{{i18n "kontaktMojOpenpgp"}}</h3>
 <a href="{{ "ArchieT.key" | relURL }}">
 <span class="pgp">6ACF 4FCE E9BC DE97 5C81&nbsp;
                 4A49 599D 6671 880D 22D6</span>

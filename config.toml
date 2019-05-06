@@ -1,6 +1,13 @@
-baseURL = "https://archiet.pl/"
-languageCode = "pl"
-title = "Michał K. Feiler, student I roku informatyki"
+DefaultContentLanguage = "en"
 
-#[permalinks]
-#  post = "/posts/:filename/"
+[languages]
+    [languages.en]
+        title = "Michał K. Feiler, Informatics undergrad"
+        baseURL = "https://a.archiet.pl/"
+        weight = 1
+    [languages.pl]
+        baseURL = "https://o.archiet.pl/"
+        title = "Michał K. Feiler, student I roku informatyki"
+        weight = 2
+
+[permalinks]
