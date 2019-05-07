@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 {% include "favicons.html" %}
 	<link rel="stylesheet" href="/styles.css"/>
-{% block add-head %} {% endblock %}
+{% block add_head %} {% endblock %}
 </head>
 <body class="website">
-{% include "nav.html.j2" %}
-<h1 id="myname" class="myname">Michał Krzysztof Feiler</h1>
+{# include "nav.html.j2" #}
+<div class="myname">
+<h1 id="myname">Michał Krzysztof Feiler</h1>
 <img class="roundme smallfloat" id="meroundinheader"
      src="{{ meroundinheaderimgsrc }}"/>
 <span class="tenside">
@@ -19,6 +20,7 @@
         Próbował robić programowanie funkcyjne zanim o nim usłyszał.
 {% endblock %}
 </span>
+</div>
 <hr/>
 {% block main %} {% endblock %}
 </body>

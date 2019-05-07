@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100em;
+}
+
+h1.myname {
+
+}
+
+div.tilesonmain {
+    box-sizing: border-box;
+}
+
+div.tileonmain {
+    display: inline-block;
+}
