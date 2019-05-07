@@ -26,14 +26,13 @@ logging.basicConfig(level=logging.INFO)
 # logger.setLevel(logging.DEBUG)
 logger.info("logger started")
 
+action = sys.argv[1]
+assert action in {'build', 'watch', 'just'}
 assert (len(sys.argv) >= 2)
 # noinspection PyTypeChecker
-assert (len(sys.argv) == 2)
+assert ((len(sys.argv) == 2) or (action == "just"))
 lang = os.getenv('SITELANG')
 assert lang in LANGS
-
-action = sys.argv[1]
-assert action in {'build', 'watch'}
 
 context = {
     "lang": lang,
@@ -112,12 +111,7 @@ if action in {"build", "watch"}:
     for (sdir, sfils) in zipped_statics:
         for sfil in sfils:
             just_static(sdir, sfil)
-    if action == "watch":
-        logger.info("we begin watching now")
-        import asyncio
-        import pyinotify
-
-
+    if action in {"watch", "just"}:
         # dict_of_just_renders = dict(zipped_list_of_just_renders)
 
         def gen_srcdest_of_statics():
@@ -129,29 +123,40 @@ if action in {"build", "watch"}:
 
         # srcdest_of_statics = tuple(gen_srcdest_of_statics())
         # dict_of_statics = dict(srcdest_of_statics)
-        what = chain(((dpath, lambda x: print(x,just_static(sdir, sfil)))
+        what = chain(((os.path.join("static", dpath), lambda x: print(x,just_static(sdir, sfil)))
                       for (dpath, (sdir, sfil))
                       in gen_srcdest_of_statics()),
                      ((os.path.join("templ", templname),
                        lambda x: print(x,just_render(templname, tdest)))
                       for (templname, tdest)
                       in zipped_list_of_just_renders))
-        loop = asyncio.get_event_loop()
-        que = []
-        for (fpath, lamb) in what:
-            wm = pyinotify.WatchManager()
-            notifier = pyinotify.AsyncioNotifier(wm, loop, callback=lamb)
-            wm.add_watch(fpath, pyinotify.IN_MODIFY | pyinotify.IN_MOVE_SELF)
-            que.append((wm, notifier))
-        try:
-            logger.info("watching from now on")
-            loop.run_forever()
-        except KeyboardInterrupt:
-            pass
-        finally:
-            loop.stop()
-            loop.close()
-            for i in que:
-                i[1].stop()
+        if action == "just":
+            whadict = dict(what)
+            for justi in sys.argv[1:]:
+                whadict[justi](None)
+            sys.exit(0)
+        if action == "watch":
+            logger.info("we begin watching now")
+            import asyncio
+            import pyinotify
+
+
+            loop = asyncio.get_event_loop()
+            que = []
+            for (fpath, lamb) in what:
+                wm = pyinotify.WatchManager()
+                notifier = pyinotify.AsyncioNotifier(wm, loop, callback=lamb)
+                wm.add_watch(fpath, pyinotify.IN_MODIFY | pyinotify.IN_MOVE_SELF)
+                que.append((wm, notifier))
+            try:
+                logger.info("watching from now on")
+                loop.run_forever()
+            except KeyboardInterrupt:
+                pass
+            finally:
+                loop.stop()
+                loop.close()
+                for i in que:
+                    i[1].stop()
     else:
         sys.exit(0)
