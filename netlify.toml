@@ -1,6 +1,6 @@
 [build]
     publish = "target/"
-    command = "./builder.py $SITELANG"
+    command = "./builder.py build"
 
 [[redirects]]
     from = "https://archiet.pl/*"
