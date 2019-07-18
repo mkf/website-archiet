@@ -2,3 +2,5 @@
 .idea/
 target/
 venv/
+.vscode/settings.json
+.vstags
