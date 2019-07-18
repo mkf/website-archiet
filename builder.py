@@ -26,9 +26,9 @@ logging.basicConfig(level=logging.INFO)
 # logger.setLevel(logging.DEBUG)
 logger.info("logger started")
 
+assert (len(sys.argv) >= 2)
 action = sys.argv[1]
 assert action in {'build', 'watch', 'just'}
-assert (len(sys.argv) >= 2)
 # noinspection PyTypeChecker
 assert ((len(sys.argv) == 2) or (action == "just"))
 lang = os.getenv('SITELANG')
