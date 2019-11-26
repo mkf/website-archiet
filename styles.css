@@ -11,4 +11,5 @@ img.roundmeright {
     width: 100px;
     border-radius: 100px;
     float: right;
+    vertical-align: super;
 }
