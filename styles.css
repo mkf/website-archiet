@@ -6,3 +6,9 @@ body {
 	padding: 0 10px;
 	overflow-y: scroll;
 }
+img.roundmeright {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    float: right;
+}
