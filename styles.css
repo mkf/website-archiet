@@ -12,3 +12,13 @@ img.roundmeright {
     border-radius: 100px;
     float: right;
 }
+table.studia td {
+    padding-left: 0.5em;
+    padding-right: 1.5em;
+}
+table.studia td.rakad {
+    text-align: end;
+}
+table.studia th {
+    text-align: justify;
+}
