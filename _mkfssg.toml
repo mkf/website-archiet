@@ -1,0 +1,12 @@
+templ_dir = "templ"
+static_dir = "static"
+target_dir = "target"
+[[templ]]
+dst = "pl/index.html"
+src = "index_pl.html.j2"
+[[templ]]
+dst = "en/index.html"
+src = "index_en.html.j2"
+[[templ]]
+dst = "_redirects"
+src = "_redirects.j2"
