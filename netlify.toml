@@ -1,0 +1,6 @@
+[[redirects]]
+from = "/"
+to = "/?lang=:asklang"
+status = 200
+query = {asklang = ":asklang"}
+headers = {Set-Cookie = "nf_lang=:asklang"}
