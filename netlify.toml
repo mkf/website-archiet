@@ -1,6 +1,18 @@
 [[redirects]]
 from = "/"
+to = "/index.:lang.html"
+status = 200
+query = {lang = ":lang"}
+
+[[redirects]]
+from = "/"
 to = "/?lang=:asklang"
 status = 200
 query = {asklang = ":asklang"}
 headers = {Set-Cookie = "nf_lang=:asklang"}
+
+[[redirects]]
+from = "/"
+to = "/?lang=pl"
+status = 200
+conditions = {Language = ["pl"]}
