@@ -1,3 +1,5 @@
+/ lang=:lang /index.:lang.html 200
+/ /?lang=pl 200 Language=pl
 https://archiet.pl/*		https://a.mikf.pl/:splat	301!
 https://www.archiet.pl/*	https://a.mikf.pl/:splat	301!
 https://a.archiet.pl/*		https://a.mikf.pl/:splat	301!
