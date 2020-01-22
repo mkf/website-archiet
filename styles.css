@@ -22,3 +22,10 @@ table.studia td.rakad {
 table.studia th {
     text-align: justify;
 }
+p {
+    margin: 0.2em;
+}
+ul {
+    margin-top: 0.05em;
+    margin-bottom: 0.45em;
+}
