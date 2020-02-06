@@ -5,7 +5,11 @@ body {
     line-height: 1.6;
     padding: 0 10px;
     overflow-y: scroll;
-    text-decoration-skip-ink: none;
+}
+@supports not (text-decoration-thickness: 2px) {
+    body {
+	text-decoration-skip-ink: none;
+    }
 }
 img.roundmeright {
     height: 100px;
