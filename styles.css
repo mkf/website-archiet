@@ -1,10 +1,11 @@
 body {
     font-size: 13pt;
-	margin: 40px auto;
-	max-width: 800px;
-	line-height: 1.6;
-	padding: 0 10px;
-	overflow-y: scroll;
+    margin: 40px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 0 10px;
+    overflow-y: scroll;
+    text-decoration-skip-ink: none;
 }
 img.roundmeright {
     height: 100px;
@@ -28,4 +29,11 @@ p {
 ul {
     margin-top: 0.05em;
     margin-bottom: 0.45em;
+}
+table.contactme td {
+    border-bottom: 1pt solid black;
+}
+abbr.outlook {
+    text-decoration-color: #999;
+    text-decoration-thickness: 2px;
 }
