@@ -15,3 +15,10 @@ https://www.mikf.pl/*		https://a.mikf.pl/:splat	301!
 http://mikf.pl/*		https://a.mikf.pl/:splat	301!
 http://www.mikf.pl/*		https://a.mikf.pl/:splat	301!
 http://a.mikf.pl/*		https://a.mikf.pl/:splat	301!
+
+/DSCF7629-bfab-fixed-squared-666px-333px.png    /_g/DSCF7629-bfab-fixed-squared-666px-333px.png      301
+/DSCF7629-bfab-fixed-squared-666px.png	        /_g/DSCF7629-bfab-fixed-squared-666px.png            301
+/DSCF7629-bfab-fixed-squared-666px-scale30.png	/_g/DSCF7629-bfab-fixed-squared-666px-scale30.png    301
+/FmNIEHfg.jpg					/_g/FmNIEHfg.jpg				     301
+/IMG_20170530_205342_797_100px.png		/_g/IMG_20170530_205342_797_100px.png		     301
+/IMG_20170530_205342_797.jpg			/_g/IMG_20170530_205342_797.jpg			     301
