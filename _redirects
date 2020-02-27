@@ -15,5 +15,3 @@ https://www.mikf.pl/*		https://a.mikf.pl/:splat	301!
 http://mikf.pl/*		https://a.mikf.pl/:splat	301!
 http://www.mikf.pl/*		https://a.mikf.pl/:splat	301!
 http://a.mikf.pl/*		https://a.mikf.pl/:splat	301!
-
-/*				/_g/:splat			301
