@@ -25,23 +25,27 @@ ul {
     margin-bottom: 0.45em;
 }
 table.contactme {
-    margin-top: 1.1em;
+    margin-top: 1em;
     display: inline-table;
     border-right: 1pt groove gray;
+    border-collapse: collapse;
+    margin-right: 2em;
 }
-table.contactme tr {
+table.contactme tr td,th {
     border-bottom: 1pt solid black;
 }
 table.contactme th {
     background-color: lightgray;
     font-style: normal;
-    font-stretch: condensed;
+    font-stretch: ultra-condensed;
+    font-weight: lighter;
 }
 table.contactme.odd {
-    margin-top: 1.2em;
+    vertical-align: middle;
 }
 table.contactme.odder {
-    margin-top: 1.3em;
+    margin-bottom: 0.1em;
+    vertical-align: bottom;
 }
 abbr.outlook {
     text-decoration-color: #999;
