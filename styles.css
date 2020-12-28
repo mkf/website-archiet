@@ -6,13 +6,16 @@ body {
 }
 div.narr,div.wider {
     padding: 0 10px;
-    margin: inherit auto;
+    margin: auto;
 }
 div.narr {
     max-width: 800px;
 }
 div.wider {
     max-width: 80%;
+}
+div.contactme {
+    margin: auto;
 }
 @supports not (text-decoration-thickness: 2px) {
     body {
