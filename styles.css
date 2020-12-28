@@ -27,14 +27,13 @@ ul {
 table.contactme {
     margin-top: 1.5em;
     display: inline-table;
+    border-right: 1pt groove gray;
 }
-table.contactme td th {
+table.contactme tr {
     border-bottom: 1pt solid black;
-    border-right: 1pt dotted darkgray;
 }
 table.contactme th {
-    background: solid lightgray;
-    border-right: 1pt solid darkgray;
+    background-color: lightgray;
     font-style: normal;
     font-stretch: condensed;
 }
