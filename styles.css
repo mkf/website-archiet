@@ -37,6 +37,12 @@ table.contactme th {
     font-style: normal;
     font-stretch: condensed;
 }
+table.contactme.odd {
+    padding-top: 0.1em;
+}
+table.contactme.odder {
+    padding-top: 0.2em;
+}
 abbr.outlook {
     text-decoration-color: #999;
     text-decoration-thickness: 2px;
