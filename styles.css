@@ -28,13 +28,15 @@ table.contactme {
     margin-top: 1.5em;
     display: inline-table;
 }
-table.contactme td {
+table.contactme td th {
     border-bottom: 1pt solid black;
     border-right: 1pt dotted darkgray;
 }
 table.contactme th {
     background: solid lightgray;
     border-right: 1pt solid darkgray;
+    font-style: normal;
+    font-stretch: condensed;
 }
 abbr.outlook {
     text-decoration-color: #999;
