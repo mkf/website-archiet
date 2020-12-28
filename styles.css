@@ -25,9 +25,9 @@ div.contactme {
     }
 }
 img.roundmeright {
-    height: 100px;
-    width: 100px;
-    border-radius: 100px;
+    height: 100%;
+    border-radius: 95%;
+    max-width: 640px;
     float: right;
 }
 p {
