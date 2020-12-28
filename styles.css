@@ -25,7 +25,7 @@ ul {
     margin-bottom: 0.45em;
 }
 table.contactme {
-    margin-top: 1.5em;
+    margin-top: 1.1em;
     display: inline-table;
     border-right: 1pt groove gray;
 }
@@ -38,10 +38,10 @@ table.contactme th {
     font-stretch: condensed;
 }
 table.contactme.odd {
-    padding-top: 0.1em;
+    margin-top: 1.2em;
 }
 table.contactme.odder {
-    padding-top: 0.2em;
+    margin-top: 1.3em;
 }
 abbr.outlook {
     text-decoration-color: #999;
