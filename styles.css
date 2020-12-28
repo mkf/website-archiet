@@ -17,6 +17,7 @@ div.wider {
 div.contactme {
     margin: auto;
     display: inline-block;
+    text-align: center;
 }
 @supports not (text-decoration-thickness: 2px) {
     body {
