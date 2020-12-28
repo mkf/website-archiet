@@ -27,12 +27,11 @@ ul {
 table.contactme {
     margin-top: 1em;
     display: inline-table;
-    border-right: 1pt groove gray;
-    border-collapse: collapse;
+    border-right: 1pt dashed lightgray;
     margin-right: 2em;
 }
 table.contactme tr td,th {
-    border-bottom: 1pt solid black;
+    border-bottom: 1pt dashed darkgray;
 }
 table.contactme th {
     background-color: lightgray;
