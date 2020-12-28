@@ -30,6 +30,11 @@ table.contactme {
 }
 table.contactme td {
     border-bottom: 1pt solid black;
+    border-right: 1pt dotted darkgray;
+}
+table.contactme th {
+    background: solid lightgray;
+    border-right: 1pt solid darkgray;
 }
 abbr.outlook {
     text-decoration-color: #999;
