@@ -25,9 +25,8 @@ div.contactme {
     }
 }
 img.roundmeright {
-    height: 50%;
     border-radius: 95%;
-    max-width: 640px;
+    max-width: 20vmin;
     float: right;
 }
 p {
