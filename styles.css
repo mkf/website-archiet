@@ -42,10 +42,10 @@ table.contactme {
     display: inline-table;
     border-right: 1pt dashed lightgray;
     margin-right: 2em;
-    text-align: default;
 }
 table.contactme tr td,th {
     border-bottom: 1pt dashed darkgray;
+    text-align: default;
 }
 table.contactme th {
     background-color: whitesmoke;
