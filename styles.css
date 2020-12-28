@@ -45,13 +45,14 @@ table.contactme {
 }
 table.contactme tr td,th {
     border-bottom: 1pt dashed darkgray;
-    text-align: default;
+    text-align: initial;
 }
 table.contactme th {
     background-color: whitesmoke;
     font-style: normal;
     font-stretch: ultra-condensed;
     font-weight: lighter;
+    text-align: center;
 }
 table.contactme.odd {
     vertical-align: middle;
