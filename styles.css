@@ -15,7 +15,8 @@ div.wider {
     max-width: 80%;
 }
 div.contactme {
-    margin: auto;
+    margin: 0;
+    width: 90%;
     display: inline-block;
     text-align: center;
 }
@@ -41,10 +42,14 @@ table.contactme {
     display: inline-table;
     border-right: 1pt dashed lightgray;
     margin-right: 2em;
+    margin-left: 2em;
 }
 table.contactme tr td,th {
     border-bottom: 1pt dashed darkgray;
     text-align: initial;
+}
+table.contactme td.underlined {
+    border-bottom: 2pt dashed #555;
 }
 table.contactme th {
     background-color: whitesmoke;
