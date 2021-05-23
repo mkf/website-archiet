@@ -66,6 +66,15 @@ table.contactme td a {
 table.contactme td a:visited {
     color: rgb(120, 0, 241);
 }
+table.contactme td tt span.float {
+    float: right;
+}
+table.contactme td tt span.float,
+table.contactme td tt span.nadisc {
+    font-style: italic;
+    color: rgb(10, 10, 10);
+    letter-spacing: -1px;
+}
 table.contactme.odd {
     vertical-align: middle;
 }
